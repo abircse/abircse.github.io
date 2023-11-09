@@ -1,5 +1,75 @@
 {
-    "name": "Nayeem Shiddiki Abir",
-    "email": "abircoxsbazar@gmail.com",
-    "phone": "01682148802"
+    "PersonalInformation" : {
+        "description" : "",
+        "Name" : "Nayeem Shiddiki Abir",
+        "Tagline" : "Sr Software Engineer",
+        "DateOfBirth" : "28 March, 2023",
+        "ExperienceYear" : "5Year+",
+        "Email" : "abircoxsbazar@gmail.com",
+        "Phone": 1682148802,
+        "Address": "Fakir Para, Khurushkul, Cox's Bazar, Bangladesh",
+        "Availability": "Available"
+    },
+    "Statictics" : {
+        "YearOfExperience" : "6+",
+        "HappyClient": "10+",
+        "CompletedProject" : "50+",
+        "TicketClosed" : "250 Jira & Trello Tickets Closed",
+        "CodingHour": "5000 Hours"
+    },
+    "Education" : [
+        {
+            "InstitutionName" : "Cox's Bazar International University",
+            "InstitutionLogo" : "",
+            "InstitutionUrl" : "www.cbiu.ac.bd",
+            "Degree" : "B.Sc in CSE",
+            "CGPA": 4.19
+        }
+    ],
+    "Skils" : [
+        {
+            "technologyName": "Android",
+            "ProgressLevel" : 90
+        }
+    ],
+    "Experience" : [
+        {
+            "Position" : "Sr Software Engineer",
+            "CompanyName" : "TBL Tech Nerds",
+            "WorkDuration" : "Jan 01, 2023 to Present",
+            "CompanyUrl" : ""
+        }
+    ],
+    "Services" : [
+        {
+            "ServiceName" : "Android Application Development",
+            "ServiceLogo" : "",
+            "ServiceDescription" : ""
+        }
+    ],
+    "Portfolio" : [
+        {
+            "ProjectName": "CBN",
+            "ProjectUrl" : "",
+            "ProjectLogo": "",
+            "ProjectDescrition": ""
+        }
+    ],
+    "Testimonial" : [
+        {
+
+            "PersonName" : "Greg Demetries",
+            "PersonPhoto" : "",
+            "PersonProfession" : "Founder & CEO - Global Dynamic Solutions",
+            "Message" : "",
+            "Rating": 4
+        }
+    ],
+    "SocialNetwork" : [
+        {
+            "NetworkLogo" : "",
+            "NetworkName" : "Facebook",
+            "NetworkUrl" : "www.facebook.com/abircoxsbazar"       
+        }
+    ]
 }
