@@ -1,4 +1,7 @@
 {
-  "cbn-base-url" : "https://cbnbd.com"
+  "cbn-base-url" : "https://cbnbd.com",
+  "maintainance" : true,
+  "title": "Alert!",
+  "message": "The System is under maintainance, We will be right back soon!"
 }
   
