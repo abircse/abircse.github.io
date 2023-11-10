@@ -3,5 +3,6 @@
   "maintainanceEnable" : true,
   "maintainanceTitle": "বিশেষ ঘোষণা",
   "maintainanceMessage": "মান উন্নয়নের জন্য, আমাদের সিস্টেমে এই মুহূর্তে কাজ চলমান আছে। যতদ্রুত সম্ভভ আমরা ফেরত আসব। সাময়িক অসুবিধার জন্য আন্তরিক দুঃখিত। ধন্যবাদ"
+  "maintainanceButtonText": "ঠিক আছে"
 }
   
