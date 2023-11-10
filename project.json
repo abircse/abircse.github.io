@@ -1,7 +1,7 @@
 {
   "cbn-base-url" : "https://cbnbd.com",
-  "maintainance" : true,
-  "title": "Alert!",
-  "message": "The System is under maintainance, We will be right back soon!"
+  "maintainanceEnable" : true,
+  "maintainanceTitle": "Alert!",
+  "maintainanceMessage": "The System is under maintainance, We will be right back soon!"
 }
   
