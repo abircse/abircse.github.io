@@ -99,17 +99,17 @@
       {
         "title": "Phone",
         "icon": "phone",
-        "url": ""
+        "url": "tel: 01682148802"
       },
       {
         "title": "Facebook",
         "icon": "facebook",
-        "url": ""
+        "url": "https://www.facebook.com/coxtunes"
       },
       {
         "title": "Email",
         "icon": "email",
-        "url": ""
+        "url": "coxtuneslab@gmail.com"
       }
     ]
   },
