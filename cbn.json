@@ -98,17 +98,17 @@
     "social_link": [
       {
         "title": "Phone",
-        "icon": "https://static.vecteezy.com/system/resources/previews/005/747/811/non_2x/call-answer-icon-symbol-green-call-icon-symbol-for-web-app-logo-vector.jpg",
+        "icon": "https://img.icons8.com/color/96/phone.png",        
         "url": "tel: 01682148802"
       },
       {
         "title": "Facebook",
-        "icon": "facebook",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
         "url": "https://www.facebook.com/coxtunes"
       },
       {
         "title": "Email",
-        "icon": "email",
+        "icon": "https://img.icons8.com/color/96/gmail-new.png",
         "url": "coxtuneslab@gmail.com"
       }
     ]
