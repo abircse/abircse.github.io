@@ -1,8 +1,120 @@
 {
-  "cbn-base-url" : "https://www.coxsbazarnews.com",
-  "maintainanceEnable" : false,
+  "cbn-base-url": "https://www.coxsbazarnews.com",
+  "maintainanceEnable": false,
   "maintainanceTitle": "বিশেষ ঘোষণা",
-  "maintainanceMessage": "মান উন্নয়নের জন্য, আমাদের সিস্টেমে এই মুহূর্তে কাজ চলমান আছে। যতদ্রুত সম্ভভ আমরা ফেরত আসব। সাময়িক অসুবিধার জন্য আন্তরিক দুঃখিত। ধন্যবাদ",
-  "maintainanceButtonText": "ঠিক আছে"
+  "maintainanceMessage": "মান উন্নয়নের জন্য, আমাদের সিস্টেমে এই মুহূর্তে কাজ চলমান আছে। যতদ্রুত সম্ভভ আমরা ফেরত আসব। সাময়িক অসুবিধার জন্য আন্তরিক দুঃখিত। ধন্যবাদ",
+  "maintainanceButtonText": "ঠিক আছে",
+  "maintainanceLink": "",
+  "editor": {
+    "menu_title": "সম্পাদক",
+    "name": "আকতার চৌধুরী",
+    "profile_picture": "",
+    "current_designation": "সম্পাদক ও প্রকাশকঃ কক্সবাজার নিউজ- (CBN)",
+    "other_designations": [
+      {
+        "title": "সহযোগী অধ্যাপক ও বিভাগীয় প্রধান",
+        "details": "(ইসলামী ইতিহাস ও সংস্কৃতি বিভাগ) কক্সবাজার সিটি কলেজ"
+      },
+      {
+        "title": "আহবায়ক",
+        "details": "জাতীয় অনলাইন প্রেস ক্লাব"
+      },
+      {
+        "title": "সিনিয়র সহ সভাপতি",
+        "details": "বাংলাদেশ অনলাইন নিউজপোর্টাল এসোসিয়েশন (বনপা)"
+      }
+    ],
+    "social_link": [
+      {
+        "title": "WhatsApp",
+        "icon": "whatsapp",
+        "url": ""
+      },
+      {
+        "title": "Facebook",
+        "icon": "facebook",
+        "url": ""
+      },
+      {
+        "title": "Email",
+        "icon": "email",
+        "url": "mailto:primecox@gmail.com"
+      }
+    ]
+  },
+  "contact": {
+    "menu_title": "যোগাযোগ",
+    "name": "কক্সবাজার নিউজ (CBN)",
+    "logo": "",
+    "information": [
+      {
+        "title": "অফিস",
+        "data": "চৌধুরী ভবন (৩য় তলা), রুমালিয়ার ছড়া, কক্সবাজার, বাংলাদেশ"
+      },
+      {
+        "title": "ইমেইল",
+        "data": "primecox@gmail.com"
+      },
+      {
+        "title": "ওয়েবসাইট",
+        "data": "www.coxsbazarnews.com, www.cbnbd.com"
+      },
+      {
+        "title": "বিজ্ঞাপন",
+        "data": "বিকাশঃ ০১৭১১৩১৫১৭১(পারসোনাল)"
+      }
+    ],
+    "social_link": {
+      "headline": "যোগাযোগ",
+      "data": [
+        {
+          "title": "Facebook",
+          "icon": "facebook",
+          "url": ""
+        },
+        {
+          "title": "X",
+          "icon": "x",
+          "url": ""
+        },
+        {
+          "title": "Group",
+          "icon": "group",
+          "url": ""
+        },
+        {
+          "title": "Email",
+          "icon": "email",
+          "url": "mailto:primecox@gmail.com"
+        }
+      ]
+    }
+  },
+  "developer_info": {
+    "menu_title": "কারিগরি সহায়তা ও বাস্তবায়নে",
+    "name": "কক্সটিউনস ল্যাব",
+    "logo": "",
+    "description": "আপনার প্রতিষ্ঠানের জন্য সফটওয়্যার/মোবাইল অ্যাপ/ওয়েবসাইট তৈরি ও কারিগরি সহায়তার জন্য যোগাযোগ করুন",
+    "social_link": [
+      {
+        "title": "Phone",
+        "icon": "phone",
+        "url": ""
+      },
+      {
+        "title": "Facebook",
+        "icon": "facebook",
+        "url": ""
+      },
+      {
+        "title": "Email",
+        "icon": "email",
+        "url": ""
+      }
+    ]
+  },
+  "app_update": {
+    "menu_title": "অ্যাপ আপডেট",
+    "app_store_url": ""
+  }
 }
-  
