@@ -27,17 +27,17 @@
     "social_link": [
       {
         "title": "WhatsApp",
-        "icon": "whatsapp",
-        "url": ""
+        "icon": "https://img.icons8.com/color/96/whatsapp.png",        
+        "url": "https://wa.me/01711315171"
       },
       {
         "title": "Facebook",
-        "icon": "facebook",
+        "icon": "https://img.icons8.com/color/96/facebook-new.png",
         "url": ""
       },
       {
         "title": "Email",
-        "icon": "email",
+        "icon": "https://img.icons8.com/color/96/gmail-new.png",
         "url": "mailto:primecox@gmail.com"
       }
     ]
