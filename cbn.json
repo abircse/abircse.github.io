@@ -40,21 +40,6 @@
         "title": "Email",
         "icon": "https://img.icons8.com/color/96/gmail-new.png",
         "url": "mailto:primecox@gmail.com"
-      },
-       {
-        "title": "WhatsApp",
-        "icon": "https://img.icons8.com/color/96/whatsapp.png",        
-        "url": "https://wa.me/01711315171"
-      },
-      {
-        "title": "Facebook",
-        "icon": "https://img.icons8.com/color/96/facebook-new.png",
-        "url": ""
-      },
-      {
-        "title": "Email",
-        "icon": "https://img.icons8.com/color/96/gmail-new.png",
-        "url": "mailto:primecox@gmail.com"
       }
     ]
   },
