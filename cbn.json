@@ -110,7 +110,13 @@
         "icon": "https://img.icons8.com/color/96/gmail-new.png",
         "url": "coxtuneslab@gmail.com"
       }
-    ]
+    ],
+    "information": [
+      {
+        "title": "অফিস",
+        "data": "সিডিএ নতুন চাঁদগাহ আবাসিক"
+      }
+    ],
   },
   "app_update": {
     "menu_title": "অ্যাপ আপডেট",
