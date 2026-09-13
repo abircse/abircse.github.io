@@ -66,9 +66,7 @@
         "data": "বিকাশঃ ০১৭১১৩১৫১৭১(পারসোনাল)"
       }
     ],
-    "social_link": {
-      "headline": "যোগাযোগ",
-      "data": [
+    "social_link": [
           {
             "title": "Facebook",
             "icon": "https://cdn.simpleicons.org/facebook/1877F2",
@@ -89,8 +87,7 @@
             "icon": "https://cdn.simpleicons.org/gmail/EA4335",
             "url": "mailto:primecox@gmail.com"
           }
-        ]
-    }
+      ]
   },
   "developer_info": {
     "menu_title": "কারিগরি সহায়তা ও বাস্তবায়নে",
