@@ -68,27 +68,27 @@
     "social_link": {
       "headline": "যোগাযোগ",
       "data": [
-        {
-          "title": "Facebook",
-          "icon": "facebook",
-          "url": ""
-        },
-        {
-          "title": "X",
-          "icon": "x",
-          "url": ""
-        },
-        {
-          "title": "Group",
-          "icon": "group",
-          "url": ""
-        },
-        {
-          "title": "Email",
-          "icon": "email",
-          "url": "mailto:primecox@gmail.com"
-        }
-      ]
+          {
+            "title": "Facebook",
+            "icon": "https://cdn.simpleicons.org/facebook/1877F2",
+            "url": ""
+          },
+          {
+            "title": "X",
+            "icon": "https://cdn.simpleicons.org/x/000000",
+            "url": ""
+          },
+          {
+            "title": "Group",
+            "icon": "https://cdn.simpleicons.org/googlegroups/4285F4",
+            "url": ""
+          },
+          {
+            "title": "Email",
+            "icon": "https://cdn.simpleicons.org/gmail/EA4335",
+            "url": "mailto:primecox@gmail.com"
+          }
+        ]
     }
   },
   "developer_info": {
