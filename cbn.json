@@ -10,7 +10,7 @@
     "name": "আকতার উদ্দিন চৌধুরী",
     "profile_picture": "",
     "current_designation": "সম্পাদক ও প্রকাশকঃ কক্সবাজার নিউজ- (CBN)",
-    "other_designation_title": "চলমান দায়িত্ব ও কর্মস্থল",
+    "other_designation_title": "চলমান দায়িত্ব ও কর্মস্থল",
     "other_designations": [
       {
         "title": "সহযোগী অধ্যাপক ও বিভাগীয় প্রধান",
@@ -28,7 +28,7 @@
     "social_link": [
       {
         "title": "WhatsApp",
-        "icon": "https://img.icons8.com/color/96/whatsapp.png",        
+        "icon": "https://img.icons8.com/color/96/whatsapp.png",
         "url": "https://wa.me/01711315171"
       },
       {
@@ -51,7 +51,7 @@
     "information": [
       {
         "title": "অফিস",
-        "data": "চৌধুরী ভবন (৩য় তলা), রুমালিয়ার ছড়া, কক্সবাজার, বাংলাদেশ"
+        "data": "চৌধুরী ভবন (৩য় তলা), রুমালিয়ার ছড়া, কক্সবাজার, বাংলাদেশ"
       },
       {
         "title": "ইমেইল",
@@ -67,27 +67,27 @@
       }
     ],
     "social_link": [
-          {
-            "title": "Facebook",
-            "icon": "https://cdn.simpleicons.org/facebook/1877F2",
-            "url": ""
-          },
-          {
-            "title": "X",
-            "icon": "https://cdn.simpleicons.org/x/000000",
-            "url": ""
-          },
-          {
-            "title": "Group",
-            "icon": "https://cdn.simpleicons.org/googlegroups/4285F4",
-            "url": ""
-          },
-          {
-            "title": "Email",
-            "icon": "https://cdn.simpleicons.org/gmail/EA4335",
-            "url": "mailto:primecox@gmail.com"
-          }
-      ]
+      {
+        "title": "Facebook",
+        "icon": "https://cdn.simpleicons.org/facebook/1877F2",
+        "url": ""
+      },
+      {
+        "title": "X",
+        "icon": "https://cdn.simpleicons.org/x/000000",
+        "url": ""
+      },
+      {
+        "title": "Group",
+        "icon": "https://cdn.simpleicons.org/googlegroups/4285F4",
+        "url": ""
+      },
+      {
+        "title": "Email",
+        "icon": "https://cdn.simpleicons.org/gmail/EA4335",
+        "url": "mailto:primecox@gmail.com"
+      }
+    ]
   },
   "developer_info": {
     "menu_title": "কারিগরি সহায়তা ও বাস্তবায়নে",
@@ -97,8 +97,8 @@
     "social_link": [
       {
         "title": "Phone",
-        "icon": "https://img.icons8.com/color/96/phone.png",        
-        "url": "tel: 01682148802"
+        "icon": "https://img.icons8.com/color/96/phone.png",
+        "url": "tel:01682148802"
       },
       {
         "title": "Facebook",
@@ -108,7 +108,7 @@
       {
         "title": "Email",
         "icon": "https://img.icons8.com/color/96/gmail-new.png",
-        "url": "coxtuneslab@gmail.com"
+        "url": "mailto:coxtuneslab@gmail.com"
       }
     ],
     "information": [
@@ -116,7 +116,7 @@
         "title": "অফিস",
         "data": "সিডিএ নতুন চাঁদগাহ আবাসিক"
       }
-    ],
+    ]
   },
   "app_update": {
     "menu_title": "অ্যাপ আপডেট",
