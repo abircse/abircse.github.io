@@ -1,530 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <met#aeb3b8et="utf-8">
-        <title>Nayeem Shiddiki Abir- Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nayeem Shiddiki Abir | Senior Mobile Engineer (Flutter & Android)</title>
+<meta name="description" content="Senior Mobile Engineer and Technical Lead with 7+ years building Flutter and native Android apps. Open to remote roles.">
+<style>
+:root{
+  --bg:#f6f8f9; --panel:#ffffff; --ink:#16252b; --muted:#5a6b72; --line:#d9e2e6;
+  --accent:#0b6e7f; --accent-ink:#ffffff; --tag:#e3f1f4;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0f1a1e;--panel:#14232a;--ink:#e6eef1;--muted:#9fb2ba;--line:#26383f;--accent:#4cc3d6;--accent-ink:#06242b;--tag:#18343c}
+}
+:root[data-theme="dark"]{--bg:#0f1a1e;--panel:#14232a;--ink:#e6eef1;--muted:#9fb2ba;--line:#26383f;--accent:#4cc3d6;--accent-ink:#06242b;--tag:#18343c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 20px 64px;display:grid;grid-template-columns:300px 1fr;gap:40px}
+aside{position:sticky;top:24px;align-self:start}
+h1{font:700 2rem/1.15 var(--serif);margin:0 0 8px}
+.role{margin:0 0 16px;color:var(--muted)}
+.badge{display:inline-block;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:4px 14px;font-size:.9rem;font-weight:600;margin-bottom:20px}
+.contact{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:6px;font-size:.95rem}
+.contact span{color:var(--muted)}
+.btns{display:flex;gap:8px;flex-wrap:wrap}
+button,.btn{font:inherit;font-weight:600;border:1px solid var(--accent);background:transparent;color:var(--accent);padding:8px 14px;border-radius:8px;cursor:pointer;text-decoration:none}
+button.primary,.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.side-block{margin-top:28px;font-size:.95rem}
+.side-block h2{font-size:1rem;margin:0 0 6px}
+main section{margin-bottom:40px}
+h2{font:700 1.4rem/1.2 var(--serif);margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+h3{font-size:1.05rem;margin:0}
+.job{margin-bottom:26px}
+.job header{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.meta{color:var(--muted);font-size:.9rem}
+.org{color:var(--accent);font-weight:600}
+ul{padding-left:20px;margin:8px 0 0}
+li{margin-bottom:4px}
+.strengths li{margin-bottom:8px}
+dl{margin:0;display:grid;grid-template-columns:200px 1fr;gap:10px 18px}
+dt{font-weight:700}
+dd{margin:0;color:var(--muted)}
+.projects{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.projects li{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0}
+.projects strong{display:block}
+.projects span{color:var(--muted);font-size:.92rem}
+.projects a{font-size:.9rem}
+.tag{background:var(--tag);border-radius:6px;padding:1px 8px;font-size:.85rem;font-weight:600}
+@media (max-width:820px){
+  .wrap{grid-template-columns:1fr;gap:24px}
+  aside{position:static}
+  dl{grid-template-columns:1fr;gap:2px}
+  dd{margin-bottom:10px}
+}
+@media print{
+  :root{--bg:#fff;--panel:#fff;--ink:#000;--muted:#333;--line:#bbb;--accent:#0b4f5c}
+  .btns,.badge{display:none}
+  .wrap{grid-template-columns:230px 1fr;padding:0;gap:24px}
+  aside{position:static}
+  .job,.projects li{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+<aside>
+  <h1>Nayeem Shiddiki Abir</h1>
+  <p class="role">Senior Mobile Engineer (Flutter &amp; Android) and Technical Lead</p>
+  <span class="badge">Open to remote roles</span>
+  <ul class="contact">
+    <li><span>Email</span><br><a href="mailto:abircoxsbazar@gmail.com">abircoxsbazar@gmail.com</a></li>
+    <li><span>Phone</span><br><a href="tel:+8801682148802">+880 1682 148802</a></li>
+    <li><span>Location</span><br>Cox's Bazar, Bangladesh</li>
+    <!-- TODO: confirm these profile URLs -->
+    <li><span>LinkedIn</span><br><a href="https://www.linkedin.com/in/abircoxsbazar">linkedin.com/in/abircoxsbazar</a></li>
+    <li><span>GitHub</span><br><a href="https://github.com/abircse">github.com/abircse</a></li>
+  </ul>
+  <div class="btns">
+    <a class="btn primary" href="mailto:abircoxsbazar@gmail.com">Email me</a>
+    <button type="button" onclick="window.print()">Save as PDF</button>
+    <button type="button" id="theme" aria-label="Toggle light or dark theme">Theme</button>
+  </div>
+  <div class="side-block">
+    <h2>Languages</h2>
+    Bangla (native)<br>English (professional, used with US teams)
+  </div>
+  <div class="side-block">
+    <h2>Education</h2>
+    <strong>B.Sc. in Computer Science and Engineering</strong><br>
+    Cox's Bazar International University<br>
+    <span class="meta">2014 – 2018 | CGPA 3.18 / 4.00</span>
+  </div>
+</aside>
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<main>
+  <section id="summary">
+    <h2>Summary</h2>
+    <p>Senior mobile engineer and technical lead with 7+ years building and shipping Flutter and native Android apps for US-based clients, all within remote teams. Builds scalable app architectures with REST APIs, Firebase backends, and hardware-connected features. Leads engineers through architecture, code review, hiring interviews, and delivery across concurrent projects. Communicates clearly with clients and stakeholders and turns business requirements into reliable, maintainable software.</p>
+  </section>
 
-        <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <section id="strengths">
+    <h2>Core strengths</h2>
+    <ul class="strengths">
+      <li><strong>Scalable Flutter applications:</strong> clean, modular architecture with state management, built to grow with the product</li>
+      <li><strong>API design and integration:</strong> REST APIs, authentication, and third-party service integration</li>
+      <li><strong>Firebase and cloud backends:</strong> Firestore, Realtime Database, Cloud Messaging, Remote Config, Crashlytics, Authentication</li>
+      <li><strong>Hardware connectivity:</strong> connecting mobile apps to external devices and peripherals</li>
+      <li><strong>Technical leadership:</strong> architecture decisions, code review, hiring interviews, sprint planning, client technical meetings</li>
+      <li><strong>Remote collaboration:</strong> 7+ years working with US-based clients and teams across time zones</li>
+    </ul>
+  </section>
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <section id="experience">
+    <h2>Experience</h2>
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <article class="job">
+      <header><h3>Technical Lead (Engineering Team) <span class="org">· Global Dynamic Solutions</span></h3><span class="meta">06/2023 – Present | Remote (USA)</span></header>
+      <ul>
+        <li>Own architecture and infrastructure decisions for multiple mobile and backend projects, from design through delivery</li>
+        <li>Lead a remote engineering team across concurrent projects, owning planning, delivery, and mentoring</li>
+        <li>Run client technical meetings and translate business requirements into scoped, buildable solutions</li>
+        <li>Review code and guide the team through complex technical and development challenges</li>
+        <li>Conduct technical interviews to hire engineers</li>
+        <li>Manage team workload and delivery timelines; collaborate with stakeholders, scrum master, and cross-functional teams</li>
+        <li>Build and ship both native Android (Kotlin/Java) and Flutter applications, with scalable architecture, custom APIs, Firebase backends, and hardware-connected apps</li>
+        <!-- TODO: add measurable results (team size, apps shipped, users, performance gains) -->
+      </ul>
+    </article>
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <article class="job">
+      <header><h3>Lead Software Engineer (Android) <span class="org">· DevStation39</span></h3><span class="meta">07/2022 – 06/2023 | Remote (USA)</span></header>
+      <ul>
+        <li>Defined Android application and infrastructure architecture</li>
+        <li>Led the Android team across multiple projects</li>
+        <li>Reviewed code and guided the team in resolving complex development challenges</li>
+        <li>Managed team and time; collaborated with stakeholders, scrum master, and cross-functional teams</li>
+      </ul>
+    </article>
 
-    <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
+    <article class="job">
+      <header><h3>Senior Software Engineer (Android) <span class="org">· Hire Programmers</span></h3><span class="meta">01/2022 – 06/2022 | Remote (USA)</span></header>
+      <ul>
+        <li>Developed Android apps across various client projects, working with marketing, executives, UI designers, and other developers</li>
+        <li>Integrated applications with Android APIs and third-party APIs</li>
+        <li>Designed database structures that integrate with Android apps and web interfaces</li>
+        <li>Owned the full SDLC: analysis, development, testing, deployment, and enhancement</li>
+        <li>Tested apps and handled publishing after project completion</li>
+      </ul>
+    </article>
 
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4 sticky-lg-top vh-100">
-                    <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
-                        <img style="margin: auto;" class="w-50 img-fluid mb-4" src="img/profile.jpg" alt="Image">
-                        <h1 class="text-primary mt-2">Nayeem Shiddiki Abir</h1>
-                        <div class="mb-4" style="height: 22px;">
-                            <h4 class="typed-text-output d-inline-block text-light"></h4>
-                            <div class="typed-text d-none">Senior Software Engineer || Team Lead || Android Engineer</div>
-                        </div>
-                        <br/>
-                        <div class="d-flex justify-content-center mt-auto mb-3">
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.facebook.com/nayeemshiddikiabir/"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/abircoxsbazar/"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.instagram.com/ns_abir"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="https://twitter.com/Ns_abir"><i class="fab fa-twitter"></i></a>
-                        </div>
-                        <div class="d-flex align-items-end justify-content-between border-top">
-                            <a href="https://www.linkedin.com/in/abircoxsbazar/overlay/1635532979828/single-media-viewer/?profileId=ACoAAB2InqoBB9SyJjOCparijm9-FsFaYINZ4-o" class="btn w-50 border-end">Download CV</a>
-                            <a href="#contact" class="btn w-50 btn-scroll">Contact Me</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <!-- About Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">About Me</h1>
-                        <p>I am a seasoned Software Engineer with over 7.5 years of experience in building robust and scalable applications for various industries. My core expertise lies in Kotlin/Java, Android Framework, Collections, IO, Networking, Caching, Generic, MVVM, SOLID, Design Patterns, Dependency Injection, Clean Architecture, Threading (RxJava2, Coroutine), Git Flow, Git.
+    <article class="job">
+      <header><h3>Software Engineer (Android) <span class="org">· TBL TechNerds</span></h3><span class="meta">09/2019 – 12/2021 | Remote (USA)</span></header>
+      <ul>
+        <li>Developed Android apps following mobile architecture best practices and SOLID principles</li>
+        <li>Reviewed code, managed repositories, and merged developer contributions</li>
+        <li>Designed responsive mobile UI; planned work and analyzed requirements</li>
+        <li>Named <strong>Best Employee of the Year (2021)</strong></li>
+      </ul>
+    </article>
 
-                            Throughout my career, I have worked on multiple projects, from conception to launch, ensuring that the applications meet the business requirements and adhere to the best coding practices. My passion for clean, maintainable, and reusable code has led me to work extensively on code refactoring, documentation, and code review.
-                        
-             
-                            If you are looking for an experienced Android Engineer who is passionate about coding, delivering high-quality products, and working collaboratively, I would love to hear from you. Let's connect and explore the possibilities!</p>
-                        <div class="row mb-4">
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Name:</span> Nayeem Shiddiki Abir
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Degree:</span> B.Sc in Computer Science & Engineering
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Experience:</span> 5 Year+
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Email:</span> abircoxsbazar@gmail.com
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Address:</span> Chairman Bari, Fakir Para, Khurushkul, Cox's Bazar, Bangladesh, 4700
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Job Status:</span> Available for remote Job
-                            </div>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">5</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Years of</p>
-                                        <h5 class="mb-0">Experience</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Happy</p>
-                                        <h5 class="mb-0">Clients</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">40</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Complete</p>
-                                        <h5 class="mb-0">Projects</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- About End -->
+    <article class="job">
+      <header><h3>Associate Software Engineer (Android) <span class="org">· Remotearth Solutions</span></h3><span class="meta">01/2019 – 05/2019 | Remote (Bangladesh)</span></header>
+      <ul>
+        <li>Designed and developed native Android applications</li>
+        <li>Mentored interns and juniors to improve code quality</li>
+        <li>Contributed to new features of production apps; handled Google Play Console and deployment</li>
+      </ul>
+    </article>
 
-                    <!-- Skills Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Skills</h1>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Android</p>
-                                        <p class="mb-2">98%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Kotlin</p>
-                                        <p class="mb-2">98%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Java</p>
-                                        <p class="mb-2">97%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Jetpack Compose</p>
-                                        <p class="mb-2">90%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Reactive Programming (Coroutine/RX)</p>
-                                        <p class="mb-2">90%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Clean Architecture</p>
-                                        <p class="mb-2">95%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Design Pattern</p>
-                                        <p class="mb-2">89%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Skills End -->
+    <article class="job">
+      <header><h3>Lead Android Application Developer <span class="org">· Silicon Institute of Technology</span></h3><span class="meta">12/2018 – 02/2019 | Cox's Bazar, Bangladesh</span></header>
+      <ul>
+        <li>Led the mobile software department: project management, milestones, and planning</li>
+        <li>Planned database architecture, managed development infrastructure, reviewed code, and handled deployments</li>
+        <li>Ran Scrum ceremonies and daily standups</li>
+      </ul>
+    </article>
+  </section>
 
-                    <!-- Expericence Start -->
-                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Expericence</h1>
-                        <div class="border-start border-2 border-light pt-2 ps-5">
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Lead Software Engineer (Android)</h5>
-                                <p class="mb-2">Devstation39-USA - Remote | <small>July 2022 - Present</small></p>
-                                <p>A Remote Job where I am responsible for lead Android team with below Rules & Responsibilities-
-                                    <ul>
-                                        <li>Define Android application and infrastructural architecture.</li>
-                                        <li>Lead multiple software projects</li>
-                                        <li>Closely works with development team to business requirements into software solutions.</li>
-                                        <li>Guide the technical team and took part into resolving complex coding and other development challenges.</li>
-                                        <li>Code review</li>
-                                        <li>By studying design system work flow & database.</li>
-                                        <li>Team & time management.</li>
-                                        <li>Collaboratively work with stake holders</li>
-                                        <li>Scrum master & cross functional team</li>
-                                      </ul> 
-                                    <p>Skills: Jetpack Compose · Java · Clean Architecture · MVVM · Kotlin</p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Senior Software Engineer (Android)</h5>
-                                <p class="mb-2">Hire-Programmers (USA) - Remote | <small>Jan 2022 - June 2022</small></p>
-                                <p>A Remote Job Where I'm Responsible to develop for various projects (Android). Collaborate with
-                                    marketing, key executives, UI designer and other developer to develop cutting-edge
-                                    applications basis on the requirements of clients.
-                                    
-                                    - Ensure applications are properly integrated with Android API/3rd Party API
-                                    - Create database structures that integrate with Android applications & web interfaces
-                                    - Contribute and participate in new feature product specifications
-                                    - Working with clients, business managers and technical teams for executing
-                                    concurrent projects
-                                    - Complete Software Development Life Cycle (SDLC) for proper analysis,
-                                    development, testing, deployment and enhancement of the code.
-                                    - Followed up by testing (user interface, errors with all possible inputs, debugging,
-                                    publishing) apps after project completion</p>
-                                    <p>Skills: Kotlin Coroutines · Clean Architecture · Android Jetpack · MVVM</p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Software Engineer (Android)</h5>
-                                <p class="mb-2">TBL Tech Nerds (USA) - Remote | <small>Sep 2019 - Dec 2021</small></p>
-                                <p>Working In Mobile Application Engineering team in Remote position:
-                                    <ul>
-                                        <li>Develop Android application with following Mobile application Architecture, best practices & solid principles</li>
-                                        <li>Review Code, Manage repository, Merge Developers code</li>
-                                        <li>Design mobile device responsive UI</li>
-                                        <li>Making plan & Requirement analysis</li>
-                                    </ul>
-                                    <p>Skills: Java · Clean Architecture · Android Jetpack · MVVM</p>
-                                    <p><b>Recognition: </b><a href="https://drive.google.com/file/d/1jenHLSu1yeK-ypFSesOR12cbFSvA4dCy/view">Best Employee Of the year award 2022</a></p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Lecturer</h5>
-                                <p class="mb-2">Cox's bazar Internation University (Department of CSE) | <small>Jan 2019 - Oct 2020</small></p>
-                                <p>Working as a Lecture in Department of Computer Science & Engineering. Back to my own Campus.</p>
-                                <ul>
-                                    <li>Working as a Lecture in Department of Computer Science & Engineering</li>
-                                    <li>Trainer In internship program</li>
-                                    <li>Student Project Review, Project Supervision, Mentoring Student, Report Review & So on... </li>
-                                </ul>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Associate Software Engineer</h5>
-                                <p class="mb-2">Remotearth Solution (Dhaka Bangladesh) - Remote | <small>Jan 2019 - Apr 2019</small></p>
-                                <p>Responsibilities for design & develop Android based mobile application in remote support</p>
-                                <p>Skills: Java · Viper · Android · Room ·</p>
-                            </div>
-                        
-                        </div>
-                    </section>
-                    <!-- Expericence End -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl>
+      <dt>Languages</dt><dd>Dart, Kotlin, Java, PHP, Python</dd>
+      <dt>Mobile and cross-platform</dt><dd>Flutter 3 / Dart 3 (scalable feature-first architecture, Material 3, platform channels, go_router); state management: Riverpod, Bloc/Cubit, Provider, GetX; Android Native (Kotlin, Jetpack Compose, Material 3, Navigation)</dd>
+      <dt>Architecture</dt><dd>Clean Architecture, MVVM, MVI, repository pattern, SOLID; Kotlin Coroutines, Flow/StateFlow, LiveData, Paging 3</dd>
+      <dt>Dependency injection</dt><dd>Hilt, Dagger 2 (Android); get_it, injectable (Flutter)</dd>
+      <dt>Backend and APIs</dt><dd>REST API design and integration (PHP raw + OOP), Dio, Retrofit, OkHttp, JSON serialization (json_serializable, Freezed), JWT/OAuth, Postman, Swagger/OpenAPI</dd>
+      <dt>Firebase and cloud</dt><dd>FlutterFire (Firestore, Realtime Database, Authentication incl. social login, Cloud Messaging, Remote Config, Crashlytics, Analytics, Storage, Cloud Functions), Firebase App Distribution, Back4app (Parse)</dd>
+      <dt>Databases</dt><dd>MySQL, SQLite, Room, Drift, Hive/Isar, Realm, DataStore, SharedPreferences, secure storage</dd>
+      <dt>Hardware connectivity</dt><dd>Bluetooth Low Energy (flutter_blue_plus), USB/serial, NFC, MQTT/IoT, platform channels, background services</dd>
+      <dt>AI/ML, maps, payments</dt><dd>ML Kit, text and image recognition; Google Maps, Mapbox; PayPal, Paytm, Stripe</dd>
+      <dt>Quality and monitoring</dt><dd>Crashlytics, Sentry, Bugfender, New Relic, Timber, LeakCanary, Flutter DevTools, Android Profiler, Detekt, ktlint, Dart analyzer</dd>
+      <dt>Practices and tools</dt><dd>TDD, Agile/Scrum, pair programming; unit, widget, and integration testing; CI/CD (GitHub Actions, Fastlane, Codemagic); Git, GitHub, GitLab, Bitbucket; Jira, Trello, Asana, Slack</dd>
+      <dt>Other</dt><dd>R8/ProGuard, Lottie, Coil, Media3/ExoPlayer, ZXing, Google Play Console, HTML, CSS, Bootstrap, WordPress</dd>
+    </dl>
+  </section>
 
-                    <!-- Subscribe Start -->
-                    <!-- 
-                    <section class="wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-secondary text-center p-5">
-                            <h1 class="text-white font-weight-bold">Subscribe My Newsletter</h1>
-                            <p class="text-white">Subscribe and get my latest article in your inbox</p>
-                            <div class="position-relative w-100">
-                                <input class="form-control bg-dark border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
-                            </div>
-                        </div>
-                    </section> 
-                     -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <!-- TODO: add a link to each project (Play Store, GitHub, or case study) and a Flutter tag where it applies -->
+    <ul class="projects">
+      <li><strong>Beach Eatz</strong><span>US-based online food delivery mobile app</span></li>
+      <li><strong>Seabee</strong><span>Construction engineering manual app for the United States Navy</span></li>
+      <li><strong>USACE</strong><span>Construction engineering manual app for the United States Army</span></li>
+      <li><strong>Nexgen</strong><span>US-based film festival and awards mobile app</span></li>
+      <li><strong>Martin School Travel</strong><span>US-based tour and travel guide agency app</span></li>
+      <li><strong>Patient Access 365</strong><span>US-based doctor appointment and consultation app</span></li>
+      <li><strong>Expense Tracker</strong><span>Product of Remotearth Solutions</span></li>
+      <li><strong>CBN</strong><span>Official app of Cox's Bazar's first online news portal</span></li>
+      <li><strong>Mahe Ramadan</strong><span>Islamic mobile app for Ramadan</span></li>
+    </ul>
+  </section>
 
-                    <!-- Subscribe End -->
+  <section id="awards">
+    <h2>Awards and activities</h2>
+    <ul>
+      <li>Best Employee of the Year, TBL TechNerds (12/2021)</li>
+      <li>President, CBIU Engineers Club; ACM ICPC contestant; Programming Contest Mentor</li>
+      <li>Participant: NASA Space Apps Challenge, Digital Innovation Fair, Google Developer Conference</li>
+    </ul>
+  </section>
+</main>
 
-                    <!-- Services Start -->
-                    <!-- <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Services</h1>
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Web Design</h5>
-                                    <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fab fa-2x fa-android mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Apps Development</h5>
-                                    <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-search mx-auto mb-4"></i>
-                                    <h5 class="mb-2">SEO</h5>
-                                    <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-edit mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Content Creating</h5>
-                                    <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-Services End -->
-
-                    <!-- Portfolio Start -->
-
-<!--                     
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Portfolio</h1>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12 text-center mb-2">
-                                        <ul class="list-inline mb-4" id="portfolio-flters">
-                                            <li class="btn btn-secondary active"  data-filter="*"><i class="fa fa-star me-2"></i>All</li>
-                                            <li class="btn btn-secondary" data-filter=".first"><i class="fa fa-laptop-code me-2"></i>Design</li>
-                                            <li class="btn btn-secondary" data-filter=".second"><i class="fa fa-mobile-alt me-2"></i>Development</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="row portfolio-container">
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section> --> 
-                    <!-- Portfolio End -->
-
-                    <!-- Testimonial Start -->
-
-                    <!-- <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Testimonial</h1>
-                        <div class="owl-carousel testimonial-carousel">
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</p>
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;">
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">Client Name</p>
-                                        <i>Profession</i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</p>
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;">
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">Client Name</p>
-                                        <i>Profession</i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</p>
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;">
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">Client Name</p>
-                                        <i>Profession</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section> -->
-
-                    <!-- Testimonial End -->
-
-                    <!-- Contact Start -->
-
-                    <!-- <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
-                        <h1 class="title pb-3 mb-5">Contact Me</h1>
-						<p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a></p>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control border-0 bg-secondary" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control border-0 bg-secondary" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control border-0 bg-secondary" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control border-0 bg-secondary" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </section> -->
-
-                    <!-- Contact End -->
-
-                    <!-- Footer Start -->
-
-                    <section class="wow fadeIn" data-wow-delay="0.1s">
-                        <div class="bg-secondary text-light text-center p-5">
-<!--                             
-                            <div class="d-flex justify-content-center mb-4">
-                                <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <div class="d-flex justify-content-center mb-3">
-                                <a class="text-light px-3 border-end" href="#">Privacy</a>
-                                <a class="text-light px-3 border-end" href="#">Terms</a>
-                                <a class="text-light px-3 border-end" href="#">FAQs</a>
-                                <a class="text-light px-3" href="#">Help</a>
-                            </div> -->
-							
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							<p class="m-0">&copy; All Rights Reserved. 2023 || Made with Love by <a href="https://coxtunes.com">Coxtunes Lab</a></p>
-                        </div>
-                    </section>
-                    <!-- Footer End -->
-                </div>
-            </div>
-        </div>
-
-        
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+</div>
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('theme');
+  try{var saved=localStorage.getItem('theme');if(saved)root.setAttribute('data-theme',saved);}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+})();
+</script>
+</body>
 </html>
-
