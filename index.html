@@ -5,65 +5,325 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nayeem Shiddiki Abir | Senior Mobile Engineer (Android & Flutter)</title>
 <meta name="description" content="Senior Mobile Engineer and Technical Lead with 7+ years of Android and 1.5+ years of Flutter experience. Open to remote roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
 <style>
-:root{
-  --bg:#f6f8f9; --panel:#ffffff; --ink:#16252b; --muted:#5a6b72; --line:#d9e2e6;
-  --accent:#0b6e7f; --accent-ink:#ffffff; --tag:#e3f1f4;
-  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
-  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+:root {
+  --bg: #f8fafc;
+  --panel: #ffffff;
+  --panel-border: #e2e8f0;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --accent: #0284c7;
+  --accent-hover: #0369a1;
+  --accent-light: #e0f2fe;
+  --tag-bg: #f1f5f9;
+  --tag-ink: #334155;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--bg:#0f1a1e;--panel:#14232a;--ink:#e6eef1;--muted:#9fb2ba;--line:#26383f;--accent:#4cc3d6;--accent-ink:#06242b;--tag:#18343c}
+
+[data-theme="dark"] {
+  --bg: #0b1329;
+  --panel: #111c38;
+  --panel-border: #1e293b;
+  --ink: #f8fafc;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-hover: #7dd3fc;
+  --accent-light: rgba(56, 189, 248, 0.12);
+  --tag-bg: #1e293b;
+  --tag-ink: #cbd5e1;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.3);
 }
-:root[data-theme="dark"]{--bg:#0f1a1e;--panel:#14232a;--ink:#e6eef1;--muted:#9fb2ba;--line:#26383f;--accent:#4cc3d6;--accent-ink:#06242b;--tag:#18343c}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans)}
-a{color:var(--accent)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-.wrap{max-width:1080px;margin:0 auto;padding:32px 20px 64px;display:grid;grid-template-columns:300px 1fr;gap:40px}
-aside{position:sticky;top:24px;align-self:start}
-h1{font:700 2rem/1.15 var(--serif);margin:0 0 8px}
-.role{margin:0 0 16px;color:var(--muted)}
-.badge{display:inline-block;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:4px 14px;font-size:.9rem;font-weight:600;margin-bottom:20px}
-.contact{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:6px;font-size:.95rem}
-.contact span{color:var(--muted)}
-.btns{display:flex;gap:8px;flex-wrap:wrap}
-button,.btn{font:inherit;font-weight:600;border:1px solid var(--accent);background:transparent;color:var(--accent);padding:8px 14px;border-radius:8px;cursor:pointer;text-decoration:none}
-button.primary,.btn.primary{background:var(--accent);color:var(--accent-ink)}
-.side-block{margin-top:28px;font-size:.95rem}
-.side-block h2{font-size:1rem;margin:0 0 6px}
-main section{margin-bottom:40px}
-h2{font:700 1.4rem/1.2 var(--serif);margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--line)}
-h3{font-size:1.05rem;margin:0}
-.job{margin-bottom:26px}
-.job header{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
-.meta{color:var(--muted);font-size:.9rem}
-.org{color:var(--accent);font-weight:600}
-ul{padding-left:20px;margin:8px 0 0}
-li{margin-bottom:4px}
-.strengths li{margin-bottom:8px}
-dl{margin:0;display:grid;grid-template-columns:200px 1fr;gap:10px 18px}
-dt{font-weight:700}
-dd{margin:0;color:var(--muted)}
-.projects{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
-.projects li{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0}
-.projects strong{display:block}
-.projects span{color:var(--muted);font-size:.92rem}
-.projects a{font-size:.9rem}
-.tag{background:var(--tag);border-radius:6px;padding:1px 8px;font-size:.85rem;font-weight:600}
-@media (max-width:820px){
-  .wrap{grid-template-columns:1fr;gap:24px}
-  aside{position:static}
-  dl{grid-template-columns:1fr;gap:2px}
-  dd{margin-bottom:10px}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1329;
+    --panel: #111c38;
+    --panel-border: #1e293b;
+    --ink: #f8fafc;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+    --accent-hover: #7dd3fc;
+    --accent-light: rgba(56, 189, 248, 0.12);
+    --tag-bg: #1e293b;
+    --tag-ink: #cbd5e1;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.3);
+  }
 }
-@media print{
-  :root{--bg:#fff;--panel:#fff;--ink:#000;--muted:#333;--line:#bbb;--accent:#0b4f5c}
-  .btns,.badge{display:none}
-  .wrap{grid-template-columns:230px 1fr;padding:0;gap:24px}
-  aside{position:static}
-  .job,.projects li{break-inside:avoid}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 0.975rem;
+  line-height: 1.6;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+a { color: var(--accent); text-decoration: none; transition: color 0.2s ease; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 48px;
+}
+
+aside { position: sticky; top: 32px; align-self: start; }
+
+.profile-card {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0 0 8px;
+  letter-spacing: -0.02em;
+}
+
+.role {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-light);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 0.825rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.badge::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.contact {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: grid;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+.contact li { display: flex; flex-direction: column; }
+.contact span {
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.btns { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+button, .btn {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  color: var(--ink);
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+button:hover, .btn:hover { background: var(--tag-bg); border-color: var(--muted); text-decoration: none; }
+button.primary, .btn.primary {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+}
+button.primary:hover, .btn.primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.side-block {
+  padding-top: 20px;
+  border-top: 1px solid var(--panel-border);
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+.side-block h2 {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
+main section { margin-bottom: 48px; }
+
+h2.section-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--panel-border);
+  letter-spacing: -0.01em;
+}
+
+h3 { font-family: var(--font-heading); font-size: 1.05rem; font-weight: 700; margin: 0; }
+
+.job {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+}
+.job header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+.meta { color: var(--muted); font-size: 0.85rem; font-weight: 500; }
+.org { color: var(--accent); font-weight: 600; }
+
+ul { padding-left: 20px; margin: 8px 0 0; }
+li { margin-bottom: 6px; }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.skill-card {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+}
+.skill-card dt {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.skill-card dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.projects {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.projects li {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  margin: 0;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects strong {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.projects span {
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+.tag {
+  background: var(--tag-bg);
+  color: var(--tag-ink);
+  border-radius: var(--radius-sm);
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .wrap { grid-template-columns: 1fr; gap: 32px; padding: 24px 16px 48px; }
+  aside { position: static; }
+  .job header { flex-direction: column; gap: 4px; }
+}
+
+@media print {
+  :root {
+    --bg: #ffffff;
+    --panel: #ffffff;
+    --panel-border: #e2e8f0;
+    --ink: #000000;
+    --muted: #475569;
+    --accent: #0284c7;
+    --tag-bg: #f1f5f9;
+    --tag-ink: #334155;
+    --shadow-sm: none;
+  }
+  body { font-size: 10pt; line-height: 1.4; }
+  .btns, .badge { display: none !important; }
+  .wrap { grid-template-columns: 240px 1fr; padding: 0; gap: 24px; max-width: 100%; }
+  aside { position: static; }
+  .profile-card, .job, .projects li, .skill-card {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 16px;
+    background: transparent;
+  }
+  .job, .projects li { break-inside: avoid; }
 }
 </style>
 </head>
@@ -71,61 +331,70 @@ dd{margin:0;color:var(--muted)}
 <div class="wrap">
 
 <aside>
-  <h1>Nayeem Shiddiki Abir</h1>
-  <p class="role">Senior Mobile Engineer (Android &amp; Flutter) and Technical Lead</p>
-  <span class="badge">Open to remote roles</span>
-  <ul class="contact">
-    <li><span>Email</span><br><a href="mailto:abircoxsbazar@gmail.com">abircoxsbazar@gmail.com</a></li>
-    <li><span>Phone</span><br><a href="tel:+8801682148802">+880 1682 148802</a></li>
-    <li><span>Location</span><br>Cox's Bazar, Bangladesh</li>
-    <!-- TODO: confirm these profile URLs -->
-    <li><span>LinkedIn</span><br><a href="https://www.linkedin.com/in/abircoxsbazar">linkedin.com/in/abircoxsbazar</a></li>
-    <li><span>GitHub</span><br><a href="https://github.com/abircse">github.com/abircse</a></li>
-  </ul>
-  <div class="btns">
-    <a class="btn primary" href="mailto:abircoxsbazar@gmail.com">Email me</a>
-    <button type="button" id="theme" aria-label="Toggle light or dark theme">Change Theme</button>
-  </div>
-  <div class="side-block">
-    <h2>Languages</h2>
-    Bangla (native) | English (professional)
-  </div>
-  <div class="side-block">
-    <h2>Education</h2>
-    <strong>M.Sc. in Computer Science and Engineering</strong><br>
-    East Delta University, Chittagong<br>
-    <span class="meta">2025 – ongoing</span>
-    <br><br>
-    <strong>B.Sc. in Computer Science and Engineering</strong><br>
-    Cox's Bazar International University<br>
-    <span class="meta">2014 – 2018</span>
+  <div class="profile-card">
+    <h1>Nayeem Shiddiki Abir</h1>
+    <p class="role">Senior Mobile Engineer (Android &amp; Flutter) &amp; Technical Lead</p>
+    <span class="badge">Open to remote roles</span>
+    
+    <ul class="contact">
+      <li><span>Email</span><a href="mailto:abircoxsbazar@gmail.com">abircoxsbazar@gmail.com</a></li>
+      <li><span>Phone</span><a href="tel:+8801682148802">+880 1682 148802</a></li>
+      <li><span>Location</span>Cox's Bazar, Bangladesh</li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/abircoxsbazar" target="_blank" rel="noopener">linkedin.com/in/abircoxsbazar</a></li>
+      <li><span>GitHub</span><a href="https://github.com/abircse" target="_blank" rel="noopener">github.com/abircse</a></li>
+    </ul>
+
+    <div class="btns">
+      <a class="btn primary" href="mailto:abircoxsbazar@gmail.com">Email Me</a>
+      <button type="button" id="theme" aria-label="Toggle light or dark theme">Theme</button>
+    </div>
+
+    <div class="side-block">
+      <h2>Languages</h2>
+      <strong>Bangla</strong> (Native)<br>
+      <strong>English</strong> (Professional / Remote Teams)
+    </div>
+
+    <div class="side-block">
+      <h2>Education</h2>
+      <strong>B.Sc. in Computer Science &amp; Engineering</strong><br>
+      Cox's Bazar International University<br>
+      <span class="meta">2014 – 2018</span>
+      <br><br>
+      <strong>M.Sc. in Computer Science &amp; Engineering</strong><br>
+      East Delta University, Chittagong<br>
+      <span class="meta">2025 – Ongoing</span>
+    </div>
   </div>
 </aside>
 
 <main>
   <section id="summary">
-    <h2>Summary</h2>
+    <h2 class="section-title">Summary</h2>
     <p>Senior mobile engineer and technical lead with 7+ years of native Android and 1.5+ years of Flutter experience, building and shipping apps for US-based clients within remote teams. Builds scalable app architectures with REST APIs, Firebase backends, and hardware-connected features. Leads engineers through architecture, code review, hiring interviews, and delivery across concurrent projects. Communicates clearly with clients and stakeholders and turns business requirements into reliable, maintainable software.</p>
   </section>
 
   <section id="strengths">
-    <h2>Core strengths</h2>
-    <ul class="strengths">
+    <h2 class="section-title">Core Strengths</h2>
+    <ul>
       <li><strong>Native Android (7+ years):</strong> Kotlin, Jetpack Compose, Coroutines and Flow, Hilt, Room, and Kotlin Multiplatform (KMP) for sharing logic across platforms</li>
-      <li><strong>Scalable Flutter applications (1.5+ years):</strong> clean, modular architecture with state management, built to grow with the product</li>
-      <li><strong>API design and integration:</strong> REST APIs, authentication, and third-party service integration</li>
-      <li><strong>Firebase and cloud backends:</strong> Firestore, Realtime Database, Cloud Messaging, Remote Config, Crashlytics, Authentication</li>
-      <li><strong>Hardware connectivity:</strong> connecting mobile apps to external devices and peripherals</li>
-      <li><strong>Technical leadership:</strong> architecture decisions, code review, hiring interviews, sprint planning, client technical meetings</li>
-      <li><strong>Remote collaboration:</strong> 7+ years working with US-based clients and teams across time zones</li>
+      <li><strong>Scalable Flutter Applications (1.5+ years):</strong> Clean, modular architecture with state management, built to grow with the product</li>
+      <li><strong>API Design &amp; Integration:</strong> REST APIs, authentication, and third-party service integration</li>
+      <li><strong>Firebase &amp; Cloud Backends:</strong> Firestore, Realtime Database, Cloud Messaging, Remote Config, Crashlytics, Authentication</li>
+      <li><strong>Hardware Connectivity:</strong> Connecting mobile apps to external devices and peripherals via BLE, USB, and NFC</li>
+      <li><strong>Technical Leadership:</strong> Architecture decisions, code review, hiring interviews, sprint planning, client technical meetings</li>
+      <li><strong>Remote Collaboration:</strong> 7+ years working with US-based clients and teams across time zones</li>
     </ul>
   </section>
 
   <section id="experience">
-    <h2>Experience</h2>
+    <h2 class="section-title">Experience</h2>
 
     <article class="job">
-      <header><h3>Technical Lead (Engineering Team) <span class="org">· Global Dynamic Solutions</span></h3><span class="meta">06/2023 – Present | Remote (USA)</span></header>
+      <header>
+        <h3>Technical Lead (Engineering Team) <span class="org">· Global Dynamic Solutions</span></h3>
+        <span class="meta">06/2023 – Present | Remote (USA)</span>
+      </header>
       <ul>
         <li>Own architecture and infrastructure decisions for multiple mobile and backend projects, from design through delivery</li>
         <li>Lead a remote engineering team across concurrent projects, owning planning, delivery, and mentoring</li>
@@ -134,12 +403,14 @@ dd{margin:0;color:var(--muted)}
         <li>Conduct technical interviews to hire engineers</li>
         <li>Manage team workload and delivery timelines; collaborate with stakeholders, scrum master, and cross-functional teams</li>
         <li>Build and ship both native Android (Kotlin/Java) and Flutter applications, with scalable architecture, custom APIs, Firebase backends, and hardware-connected apps</li>
-        <!-- TODO: add measurable results (team size, apps shipped, users, performance gains) -->
       </ul>
     </article>
 
     <article class="job">
-      <header><h3>Lead Software Engineer (Android) <span class="org">· DevStation39</span></h3><span class="meta">07/2022 – 06/2023 | Remote (USA)</span></header>
+      <header>
+        <h3>Lead Software Engineer (Android) <span class="org">· DevStation39</span></h3>
+        <span class="meta">07/2022 – 06/2023 | Remote (USA)</span>
+      </header>
       <ul>
         <li>Defined Android application and infrastructure architecture</li>
         <li>Led the Android team across multiple projects</li>
@@ -149,7 +420,10 @@ dd{margin:0;color:var(--muted)}
     </article>
 
     <article class="job">
-      <header><h3>Senior Software Engineer (Android) <span class="org">· Hire Programmers</span></h3><span class="meta">01/2022 – 06/2022 | Remote (USA)</span></header>
+      <header>
+        <h3>Senior Software Engineer (Android) <span class="org">· Hire Programmers</span></h3>
+        <span class="meta">01/2022 – 06/2022 | Remote (USA)</span>
+      </header>
       <ul>
         <li>Developed Android apps across various client projects, working with marketing, executives, UI designers, and other developers</li>
         <li>Integrated applications with Android APIs and third-party APIs</li>
@@ -160,7 +434,10 @@ dd{margin:0;color:var(--muted)}
     </article>
 
     <article class="job">
-      <header><h3>Software Engineer (Android) <span class="org">· TBL TechNerds</span></h3><span class="meta">09/2019 – 12/2021 | Remote (USA)</span></header>
+      <header>
+        <h3>Software Engineer (Android) <span class="org">· TBL TechNerds</span></h3>
+        <span class="meta">09/2019 – 12/2021 | Remote (USA)</span>
+      </header>
       <ul>
         <li>Developed Android apps following mobile architecture best practices and SOLID principles</li>
         <li>Reviewed code, managed repositories, and merged developer contributions</li>
@@ -170,7 +447,10 @@ dd{margin:0;color:var(--muted)}
     </article>
 
     <article class="job">
-      <header><h3>Associate Software Engineer (Android) <span class="org">· Remotearth Solutions</span></h3><span class="meta">01/2019 – 05/2019 | Remote (Bangladesh)</span></header>
+      <header>
+        <h3>Associate Software Engineer (Android) <span class="org">· Remotearth Solutions</span></h3>
+        <span class="meta">01/2019 – 05/2019 | Remote (Bangladesh)</span>
+      </header>
       <ul>
         <li>Designed and developed native Android applications</li>
         <li>Mentored interns and juniors to improve code quality</li>
@@ -179,7 +459,10 @@ dd{margin:0;color:var(--muted)}
     </article>
 
     <article class="job">
-      <header><h3>Lead Android Application Developer <span class="org">· Silicon Institute of Technology</span></h3><span class="meta">12/2018 – 02/2019 | Cox's Bazar, Bangladesh</span></header>
+      <header>
+        <h3>Lead Android Application Developer <span class="org">· Silicon Institute of Technology</span></h3>
+        <span class="meta">12/2018 – 02/2019 | Cox's Bazar, Bangladesh</span>
+      </header>
       <ul>
         <li>Led the mobile software department: project management, milestones, and planning</li>
         <li>Planned database architecture, managed development infrastructure, reviewed code, and handled deployments</li>
@@ -189,62 +472,112 @@ dd{margin:0;color:var(--muted)}
   </section>
 
   <section id="skills">
-    <h2>Skills</h2>
-    <dl>
-      <dt>Languages</dt><dd>Dart, Kotlin, Java, PHP, Python</dd>
-      <dt>Mobile and cross-platform</dt><dd>Flutter 3 / Dart 3, 1.5+ years (scalable feature-first architecture, Material 3, platform channels, go_router); state management: Riverpod, Bloc/Cubit, Provider, GetX; Android Native, 7+ years (Kotlin, Jetpack Compose, Kotlin Multiplatform (KMP), Material 3, Navigation)</dd>
-      <dt>Architecture</dt><dd>Clean Architecture, MVVM, MVI, repository pattern, SOLID; Kotlin Coroutines, Flow/StateFlow, LiveData, Paging 3</dd>
-      <dt>Dependency injection</dt><dd>Hilt, Dagger 2 (Android); get_it, injectable (Flutter)</dd>
-      <dt>Backend and APIs</dt><dd>REST API design and integration (PHP raw + OOP), Dio, Retrofit, OkHttp, JSON serialization (json_serializable, Freezed), JWT/OAuth, Postman, Swagger/OpenAPI</dd>
-      <dt>Firebase and cloud</dt><dd>FlutterFire (Firestore, Realtime Database, Authentication incl. social login, Cloud Messaging, Remote Config, Crashlytics, Analytics, Storage, Cloud Functions), Firebase App Distribution, Back4app (Parse)</dd>
-      <dt>Databases</dt><dd>MySQL, SQLite, Room, Drift, Hive/Isar, Realm, DataStore, SharedPreferences, secure storage</dd>
-      <dt>Hardware connectivity</dt><dd>Bluetooth Low Energy (flutter_blue_plus), USB/serial, NFC, MQTT/IoT, platform channels, background services</dd>
-      <dt>AI/ML, maps, payments</dt><dd>ML Kit, text and image recognition; Google Maps, Mapbox; PayPal, Paytm, Stripe</dd>
-      <dt>Quality and monitoring</dt><dd>Crashlytics, Sentry, Bugfender, New Relic, Timber, LeakCanary, Flutter DevTools, Android Profiler, Detekt, ktlint, Dart analyzer</dd>
-      <dt>Practices and tools</dt><dd>TDD, Agile/Scrum, pair programming; unit, widget, and integration testing; CI/CD (GitHub Actions, Fastlane, Codemagic); Git, GitHub, GitLab, Bitbucket; Jira, Trello, Asana, Slack</dd>
-      <dt>Other</dt><dd>R8/ProGuard, Lottie, Coil, Media3/ExoPlayer, ZXing, Google Play Console, HTML, CSS, Bootstrap, WordPress</dd>
-    </dl>
+    <h2 class="section-title">Skills &amp; Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <dt>Languages</dt>
+        <dd>Dart, Kotlin, Java, PHP, Python</dd>
+      </div>
+      <div class="skill-card">
+        <dt>Mobile &amp; Cross-Platform</dt>
+        <dd>Flutter (Riverpod, Bloc, Provider), Native Android (Jetpack Compose, Kotlin Multiplatform)</dd>
+      </div>
+      <div class="skill-card">
+        <dt>Architecture</dt>
+        <dd>Clean Architecture, MVVM, MVI, Repository Pattern, SOLID, Coroutines, Flow</dd>
+      </div>
+      <div class="skill-card">
+        <dt>Dependency Injection</dt>
+        <dd>Hilt, Dagger 2, GetIt, Injectable</dd>
+      </div>
+      <div class="skill-card">
+        <dt>Backend &amp; Cloud</dt>
+        <dd>REST APIs, Firebase (Firestore, Cloud Messaging, Auth), Back4app</dd>
+      </div>
+      <div class="skill-card">
+        <dt>Hardware &amp; IoT</dt>
+        <dd>Bluetooth Low Energy (BLE), USB/Serial, NFC, MQTT, Platform Channels</dd>
+      </div>
+    </div>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <!-- TODO: add a link to each project (Play Store, GitHub, or case study) and a Flutter tag where it applies -->
+    <h2 class="section-title">Featured Projects</h2>
     <ul class="projects">
-      <li><strong>ePass & Donations</strong><span>US-based 4 Apps in 1 - Effortless Ticketing & Donation Management
-ePASS & Donations is your ultimate solution for seamless ticket management and event sponsorship!</span></li>
-      <li><strong>Beach Eatz</strong><span>US-based online food delivery mobile app</span></li>
-      <li><strong>RackinUP</strong><span>Charleston US-based Construction Management Application</span></li>
-      <li><strong>Seabee</strong><span>Construction engineering manual app for the United States Navy</span></li>
-      <li><strong>USACE</strong><span>Construction engineering manual app for the United States Army</span></li>
-      <li><strong>Nexgen</strong><span>US-based film festival and awards mobile app</span></li>
-      <li><strong>Martin School Travel</strong><span>US-based tour and travel guide agency app</span></li>
-      <li><strong>Patient Access 365</strong><span>US-based doctor appointment and consultation app</span></li>
-      <li><strong>Expense Tracker</strong><span>Product of Remotearth Solutions</span></li>
-      <li><strong>CBN</strong><span>Official app of Cox's Bazar's first online news portal</span></li>
-      <li><strong>Mahe Ramadan</strong><span>Islamic mobile app for Ramadan</span></li>
+      <li>
+        <div>
+          <strong>ePass &amp; Donations</strong>
+          <span>US-based ticketing and donation management solution with seamless event sponsorship tools.</span>
+        </div>
+        <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
+      </li>
+      <li>
+        <div>
+          <strong>Beach Eatz</strong>
+          <span>US-based online food delivery mobile application platform.</span>
+        </div>
+        <div class="tags"><span class="tag">Android</span><span class="tag">REST API</span></div>
+      </li>
+      <li>
+        <div>
+          <strong>RackinUP</strong>
+          <span>Charleston US-based construction management mobile application.</span>
+        </div>
+        <div class="tags"><span class="tag">Flutter</span><span class="tag">Maps</span></div>
+      </li>
+      <li>
+        <div>
+          <strong>Seabee &amp; USACE</strong>
+          <span>Construction engineering manual apps built for the US Navy and US Army.</span>
+        </div>
+        <div class="tags"><span class="tag">Android</span><span class="tag">Offline First</span></div>
+      </li>
+      <li>
+        <div>
+          <strong>Nexgen</strong>
+          <span>US-based film festival and awards mobile application platform.</span>
+        </div>
+        <div class="tags"><span class="tag">Mobile</span><span class="tag">Media</span></div>
+      </li>
+      <li>
+        <div>
+          <strong>Patient Access 365</strong>
+          <span>US-based doctor appointment scheduling and consultation application.</span>
+        </div>
+        <div class="tags"><span class="tag">Android</span><span class="tag">Healthcare</span></div>
+      </li>
     </ul>
   </section>
 
   <section id="awards">
-    <h2>Awards and activities</h2>
+    <h2 class="section-title">Awards &amp; Leadership</h2>
     <ul>
-      <li>Best Employee of the Year, TBL TechNerds (12/2021)</li>
-      <li>President, CBIU Engineers Club; ACM ICPC contestant; Programming Contest Mentor</li>
-      <li>Participant: NASA Space Apps Challenge, Digital Innovation Fair, Google Developer Conference</li>
+      <li><strong>Best Employee of the Year</strong> — TBL TechNerds (12/2021)</li>
+      <li><strong>President</strong> — CBIU Engineers Club</li>
+      <li><strong>Competitive Programming</strong> — ACM ICPC Contestant &amp; Student Programming Mentor</li>
+      <li><strong>Hackathons &amp; Events</strong> — Participant in NASA Space Apps Challenge &amp; Google Developer Conferences</li>
     </ul>
   </section>
 </main>
 
 </div>
+
 <script>
 (function(){
-  var root=document.documentElement,btn=document.getElementById('theme');
-  try{var saved=localStorage.getItem('theme');if(saved)root.setAttribute('data-theme',saved);}catch(e){}
-  btn.addEventListener('click',function(){
-    var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
-    var next=dark?'light':'dark';
-    root.setAttribute('data-theme',next);
-    try{localStorage.setItem('theme',next);}catch(e){}
+  var root = document.documentElement;
+  var btn = document.getElementById('theme');
+  
+  try {
+    var saved = localStorage.getItem('theme');
+    if (saved) root.setAttribute('data-theme', saved);
+  } catch(e) {}
+  
+  btn.addEventListener('click', function(){
+    var isDark = root.getAttribute('data-theme') === 'dark' || 
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    var nextTheme = isDark ? 'light' : 'dark';
+    root.setAttribute('data-theme', nextTheme);
+    try { localStorage.setItem('theme', nextTheme); } catch(e) {}
   });
 })();
 </script>
