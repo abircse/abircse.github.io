@@ -75,18 +75,18 @@ body {
 a { color: var(--accent); text-decoration: none; transition: color 0.2s ease; }
 a:hover { color: var(--accent-hover); }
 
-/* Layout Wrapper */
+/* Layout Wrapper - Extended Width */
 .site-wrapper {
-  max-width: 1240px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 40px 24px 80px;
+  padding: 40px 32px 80px;
   display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 36px;
+  grid-template-columns: 380px 1fr;
+  gap: 40px;
   align-items: start;
 }
 
-@media(max-width: 960px) {
+@media(max-width: 1024px) {
   .site-wrapper { grid-template-columns: 1fr; padding: 20px 16px 60px; }
 }
 
@@ -282,7 +282,7 @@ aside {
   background: var(--panel);
   border: 1px solid var(--panel-border);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 36px;
   box-shadow: var(--shadow-lg);
   display: none;
 }
@@ -389,7 +389,7 @@ aside {
 /* Bento Skills Grid */
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 16px;
 }
 
@@ -421,7 +421,7 @@ aside {
 /* Projects Grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 16px;
 }
 
@@ -483,7 +483,6 @@ aside {
   <aside>
     <div class="hero-card">
       <div class="avatar-wrapper">
-        <!-- EDIT HERE: Replace src with your photo URL or local asset path -->
         <img class="avatar" src="https://avatars.githubusercontent.com/u/22006238?v=4" alt="Nayeem Shiddiki Abir">
         <span class="status-dot" title="Available for remote roles"></span>
       </div>
@@ -510,12 +509,6 @@ aside {
         <h3>Languages</h3>
         <p style="margin:0; color: var(--muted);"><strong>Bangla</strong> (Native) | <strong>English</strong> (Professional)</p>
       </div>
-
-      <div class="sidebar-section">
-        <h3>Education</h3>
-        <p style="margin:0 0 10px; color: var(--muted);"><strong>M.Sc. in CSE</strong><br>East Delta University (2025–Present)<br><span style="font-size:0.8rem; color:var(--accent);">Focus: Artificial Intelligence &amp; ML</span></p>
-        <p style="margin:0; color: var(--muted);"><strong>B.Sc. in CSE</strong><br>Cox's Bazar International Univ (2014–2018)<br><span style="font-size:0.8rem; color:var(--accent);">Focus: Software Engineering</span></p>
-      </div>
     </div>
   </aside>
 
@@ -530,6 +523,7 @@ aside {
       <button class="tab-btn" onclick="switchTab('experience')">Experience</button>
       <button class="tab-btn" onclick="switchTab('skills')">Tech Stack</button>
       <button class="tab-btn" onclick="switchTab('projects')">Featured Projects</button>
+      <button class="tab-btn" onclick="switchTab('education')">Education</button>
       <button class="tab-btn" onclick="switchTab('awards')">Activities &amp; Awards</button>
     </nav>
 
@@ -788,15 +782,45 @@ aside {
       </div>
     </section>
 
-    <!-- 5. AWARDS & ACTIVITIES PANEL -->
+    <!-- 5. EDUCATION PANEL -->
+    <section id="panel-education" class="section-panel">
+      <h2 class="section-title"><span class="accent-bar"></span> Education &amp; Academic Background</h2>
+      <div class="timeline">
+        <article class="job-card">
+          <header class="job-header">
+            <div>
+              <h3 class="job-title">Master of Science (M.Sc.) in Computer Science &amp; Engineering</h3>
+              <span class="company">East Delta University, Chittagong</span>
+            </div>
+            <span class="job-meta">2025 – Present</span>
+          </header>
+          <p style="margin: 0; color: var(--muted);"><strong>Core Focus:</strong> Artificial Intelligence &amp; Machine Learning (ML)</p>
+        </article>
+
+        <article class="job-card">
+          <header class="job-header">
+            <div>
+              <h3 class="job-title">Bachelor of Science (B.Sc.) in Computer Science &amp; Engineering</h3>
+              <span class="company">Cox's Bazar International University</span>
+            </div>
+            <span class="job-meta">2014 – 2018</span>
+          </header>
+          <p style="margin: 0 0 10px; color: var(--muted);"><strong>Core Focus:</strong> Software Engineering</p>
+          <ul style="margin:0; padding-left:18px; color: var(--muted); font-size: 0.9rem;">
+            <li><strong>President:</strong> CBIU Engineers Club</li>
+            <li><strong>ACM ICPC Contestant</strong> (2016) &amp; Indoor University Programming Contestant (2015–2017)</li>
+            <li><strong>Programming Contest Mentor</strong> (2018) &amp; Active Member of CBIU Programming &amp; Robotics Club</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. AWARDS & ACTIVITIES PANEL -->
     <section id="panel-awards" class="section-panel">
       <h2 class="section-title"><span class="accent-bar"></span> Certifications, Awards &amp; Activities</h2>
       <ul style="color: var(--muted); margin: 0; padding-left: 20px; font-size: 0.95rem; display: grid; gap: 12px;">
         <li><strong>Best Employee of the Year (2021)</strong> — TBL Tech Nerds</li>
         <li><strong>Flutter SDK Certification (01/2024)</strong> — A Complete Guide to the Flutter SDK &amp; Flutter Framework (Udemy)</li>
-        <li><strong>President</strong> — CBIU Engineers Club</li>
-        <li><strong>Competitive Programming</strong> — ACM ICPC Contestant (2016), Indoor University Programming Contestant (2015–2017), &amp; Programming Contest Mentor (2018)</li>
-        <li><strong>Club Membership</strong> — CBIU Programming &amp; Robotics Club</li>
         <li><strong>Hackathons &amp; Events</strong> — Participant in Government ICT Fair, NASA Space Apps Challenge, Digital Innovation Fair, Google Developer Conference, 3D Animation Workshop, Research Methodology Sessions, and ICT Career Camps.</li>
       </ul>
     </section>
@@ -827,7 +851,6 @@ function switchTab(tabId) {
   const root = document.documentElement;
   const btn = document.getElementById('theme-toggle');
   
-  // Set initial button label based on current theme
   function updateButtonLabel() {
     const isLight = root.getAttribute('data-theme') === 'light';
     btn.innerHTML = isLight ? '☀️ Light Mode' : '🌙 Dark Mode';
