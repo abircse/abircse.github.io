@@ -70,12 +70,13 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
 }
 
 a { color: var(--accent); text-decoration: none; transition: color 0.2s ease; }
 a:hover { color: var(--accent-hover); }
 
-/* Layout Wrapper - Extended Width */
+/* Layout Wrapper - Responsive Grid */
 .site-wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -87,7 +88,11 @@ a:hover { color: var(--accent-hover); }
 }
 
 @media(max-width: 1024px) {
-  .site-wrapper { grid-template-columns: 1fr; padding: 20px 16px 60px; }
+  .site-wrapper { 
+    grid-template-columns: 1fr; 
+    padding: 20px 16px 60px; 
+    gap: 24px;
+  }
 }
 
 /* ==========================================================================
@@ -96,6 +101,10 @@ a:hover { color: var(--accent-hover); }
 aside {
   position: sticky;
   top: 32px;
+}
+
+@media(max-width: 1024px) {
+  aside { position: static; }
 }
 
 .hero-card {
@@ -149,6 +158,7 @@ aside {
   font-weight: 800;
   letter-spacing: -0.02em;
   margin: 0 0 6px;
+  word-break: break-word;
 }
 
 .title {
@@ -183,6 +193,7 @@ aside {
 .contact-list li {
   display: flex;
   flex-direction: column;
+  word-break: break-word;
 }
 
 .contact-list span {
@@ -198,6 +209,10 @@ aside {
   grid-template-columns: 1fr auto;
   gap: 10px;
   margin-bottom: 24px;
+}
+
+@media(max-width: 480px) {
+  .action-btns { grid-template-columns: 1fr; }
 }
 
 .btn {
@@ -245,9 +260,10 @@ aside {
 .main-content {
   display: grid;
   gap: 32px;
+  min-width: 0; /* Prevents flex/grid blowouts on mobile */
 }
 
-/* Navigation Tabs */
+/* Responsive Scrollable Navigation Tabs */
 .nav-tabs {
   display: flex;
   gap: 8px;
@@ -257,6 +273,12 @@ aside {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.nav-tabs::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 .tab-btn {
@@ -285,6 +307,10 @@ aside {
   padding: 36px;
   box-shadow: var(--shadow-lg);
   display: none;
+}
+
+@media(max-width: 768px) {
+  .section-panel { padding: 20px; }
 }
 
 .section-panel.active { display: block; }
@@ -316,7 +342,7 @@ aside {
 
 .summary-text strong { color: var(--ink); }
 
-/* Refined Terminal Colors */
+/* Terminal Colors */
 .terminal-box {
   background: var(--code-bg);
   border: 1px solid var(--panel-border);
@@ -345,6 +371,10 @@ aside {
   border-radius: var(--radius-md);
   padding: 24px;
   transition: transform 0.2s;
+}
+
+@media(max-width: 768px) {
+  .job-card { padding: 16px; }
 }
 
 .job-card:hover { border-color: var(--accent); }
@@ -391,7 +421,7 @@ aside {
 /* Bento Skills Grid */
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 16px;
 }
 
@@ -423,7 +453,7 @@ aside {
 /* Projects Grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 16px;
 }
 
@@ -661,7 +691,7 @@ aside {
       </div>
     </section>
 
-    <!-- 3. TECH STACK PANEL (Fully Expanded to match Complete Skills Matrix) -->
+    <!-- 3. TECH STACK PANEL -->
     <section id="panel-skills" class="section-panel">
       <h2 class="section-title"><span class="accent-bar"></span> Skills &amp; Technologies Matrix</h2>
       <div class="bento-grid">
