@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nayeem Shiddiki Abir | Senior Mobile Engineer (Android & Flutter)</title>
-<meta name="description" content="Senior Mobile Engineer and Technical Lead with 7+ years of Android and 1.5+ years of Flutter experience. Open to remote roles.">
+<title>Nayeem Shiddiki Abir | Principal Software Engineer (Mobile) & Technical Lead</title>
+<meta name="description" content="Principal Mobile Engineer and Technical Lead with 7+ years of Android and 1.5+ years of Flutter experience. Open to remote roles.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
@@ -103,9 +103,25 @@ aside { position: sticky; top: 32px; align-self: start; }
   box-shadow: var(--shadow-sm);
 }
 
+/* Profile Avatar */
+.avatar-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 2px solid var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+.avatar-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 h1 {
   font-family: var(--font-heading);
-  font-size: 1.65rem;
+  font-size: 1.55rem;
   font-weight: 800;
   line-height: 1.25;
   margin: 0 0 8px;
@@ -114,7 +130,7 @@ h1 {
 
 .role {
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
   margin: 0 0 16px;
 }
@@ -341,16 +357,21 @@ li { margin-bottom: 6px; }
      ========================================================================== -->
 <aside>
   <div class="profile-card">
-    <!-- EDIT HERE: Name and Title -->
+    <!-- EDIT HERE: Profile Image (Replace src with your photo URL or asset path) -->
+    <div class="avatar-container">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" alt="Nayeem Shiddiki Abir">
+    </div>
+
     <h1>Nayeem Shiddiki Abir</h1>
-    <p class="role">Principal Software Engineer (Mobile) (Android &amp; Flutter) &amp; Technical Lead</p>
+    <p class="role">Principal Software Engineer (Mobile) &amp; Technical Lead</p>
     <span class="badge">Open to remote roles</span>
     
     <!-- EDIT HERE: Contact Info -->
     <ul class="contact">
       <li><span>Email</span><a href="mailto:abircoxsbazar@gmail.com">abircoxsbazar@gmail.com</a></li>
       <li><span>Phone</span><a href="tel:+8801682148802">+880 1682 148802</a></li>
-      <li><span>Location</span>Cox's Bazar, Bangladesh</li>
+      <li><span>Location</span>Chittagong, Bangladesh</li>
+      <li><span>Website</span><a href="https://abircse.github.io" target="_blank" rel="noopener">abircse.github.io</a></li>
       <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/abircoxsbazar" target="_blank" rel="noopener">linkedin.com/in/abircoxsbazar</a></li>
       <li><span>GitHub</span><a href="https://github.com/abircse" target="_blank" rel="noopener">github.com/abircse</a></li>
     </ul>
@@ -364,19 +385,19 @@ li { margin-bottom: 6px; }
     <div class="side-block">
       <h2>Languages</h2>
       <strong>Bangla</strong> (Native)<br>
-      <strong>English</strong> (Professional / Remote Teams)
+      <strong>English</strong> (Professional / Remote Teams)[cite: 4]
     </div>
 
     <!-- EDIT HERE: Education -->
     <div class="side-block">
       <h2>Education</h2>
-      <strong>B.Sc. in Computer Science &amp; Engineering</strong><br>
-      Cox's Bazar International University<br>
-      <span class="meta">2014 – 2018</span>
-      <br><br>
-      <strong>M.Sc. in Computer Science &amp; Engineering</strong><br>
+      <strong>Master of Science (M.Sc.) in CSE</strong><br>
       East Delta University, Chittagong<br>
-      <span class="meta">2025 – Ongoing</span>
+      <span class="meta">2025 – Present (Focus: AI &amp; ML)</span>[cite: 4]
+      <br><br>
+      <strong>Bachelor of Science (B.Sc.) in CSE</strong><br>
+      Cox's Bazar International University<br>
+      <span class="meta">2014 – 2018</span>[cite: 4]
     </div>
   </div>
 </aside>
@@ -388,107 +409,90 @@ li { margin-bottom: 6px; }
   <!-- SUMMARY SECTION -->
   <section id="summary">
     <h2 class="section-title">Summary</h2>
-    <!-- EDIT HERE: Professional Summary -->
-    <p>Senior mobile engineer and technical lead with 7+ years of native Android and 1.5+ years of Flutter experience, building and shipping apps for US-based clients within remote teams. Builds scalable app architectures with REST APIs, Firebase backends, and hardware-connected features. Leads engineers through architecture, code review, hiring interviews, and delivery across concurrent projects. Communicates clearly with clients and stakeholders and turns business requirements into reliable, maintainable software.</p>
-  </section>
-
-  <!-- STRENGTHS SECTION -->
-  <section id="strengths">
-    <h2 class="section-title">Core Strengths</h2>
-    <!-- EDIT HERE: Key Strengths -->
-    <ul>
-      <li><strong>Native Android (7+ years):</strong> Kotlin, Jetpack Compose, Coroutines and Flow, Hilt, Room, and Kotlin Multiplatform (KMP) for sharing logic across platforms</li>
-      <li><strong>Scalable Flutter Applications (1.5+ years):</strong> Clean, modular architecture with state management, built to grow with the product</li>
-      <li><strong>API Design &amp; Integration:</strong> REST APIs, authentication, and third-party service integration</li>
-      <li><strong>Firebase &amp; Cloud Backends:</strong> Firestore, Realtime Database, Cloud Messaging, Remote Config, Crashlytics, Authentication</li>
-      <li><strong>Hardware Connectivity:</strong> Connecting mobile apps to external devices and peripherals via BLE, USB, and NFC</li>
-      <li><strong>Technical Leadership:</strong> Architecture decisions, code review, hiring interviews, sprint planning, client technical meetings</li>
-      <li><strong>Remote Collaboration:</strong> 7+ years working with US-based clients and teams across time zones</li>
-    </ul>
+    <p>Senior mobile engineer and technical lead with 7+ years of native Android and 1.5+ years of Flutter experience, building and shipping apps for international clients and US-based companies in remote teams[cite: 2]. Builds scalable app architectures with REST APIs, Firebase backends, and hardware-connected features[cite: 2]. Leads engineers through architecture, code review, hiring interviews, and delivery across concurrent projects[cite: 2]. Communicates clearly with clients and stakeholders and turns business requirements into reliable, maintainable software[cite: 2].</p>
   </section>
 
   <!-- EXPERIENCE SECTION -->
   <section id="experience">
     <h2 class="section-title">Experience</h2>
 
-    <!-- EDIT HERE: Work Experience Cards -->
     <article class="job">
       <header>
-        <h3>Technical Lead (Engineering Team) <span class="org">· Global Dynamic Solutions</span></h3>
-        <span class="meta">06/2023 – Present | Remote (USA)</span>
+        <h3>Principal Software Engineer <span class="org">· Global Dynamic Solutions LLC</span></h3>
+        <span class="meta">06/2023 – Present | Remote (USA)</span>[cite: 2]
       </header>
       <ul>
-        <li>Own architecture and infrastructure decisions for multiple mobile and backend projects, from design through delivery</li>
-        <li>Lead a remote engineering team across concurrent projects, owning planning, delivery, and mentoring</li>
-        <li>Run client technical meetings and translate business requirements into scoped, buildable solutions</li>
-        <li>Review code and guide the team through complex technical and development challenges</li>
-        <li>Conduct technical interviews to hire engineers</li>
-        <li>Manage team workload and delivery timelines; collaborate with stakeholders, scrum master, and cross-functional teams</li>
-        <li>Build and ship both native Android (Kotlin/Java) and Flutter applications, with scalable architecture, custom APIs, Firebase backends, and hardware-connected apps</li>
+        <li>Own architecture and infrastructure decisions for multiple mobile and backend projects, from design through delivery[cite: 2]</li>
+        <li>Lead a remote engineering team across concurrent projects, owning planning, delivery, and mentoring[cite: 2]</li>
+        <li>Run client technical meetings and translate business requirements into scoped, buildable solutions[cite: 2]</li>
+        <li>Review code and guide the team through complex technical and development challenges[cite: 2]</li>
+        <li>Conduct technical interviews to hire engineers[cite: 2]</li>
+        <li>Manage team workload and delivery timelines; collaborate with stakeholders, scrum master, and cross-functional teams[cite: 2]</li>
+        <li>Build and ship both native Android (Kotlin/Java) and Flutter applications, with scalable architecture, custom APIs, Firebase backends, and hardware-connected apps[cite: 2]</li>
       </ul>
     </article>
 
     <article class="job">
       <header>
         <h3>Lead Software Engineer (Android) <span class="org">· DevStation39</span></h3>
-        <span class="meta">07/2022 – 06/2023 | Remote (USA)</span>
+        <span class="meta">07/2022 – 06/2023 | Remote (USA)</span>[cite: 2]
       </header>
       <ul>
-        <li>Defined Android application and infrastructure architecture</li>
-        <li>Led the Android team across multiple projects</li>
-        <li>Reviewed code and guided the team in resolving complex development challenges</li>
-        <li>Managed team and time; collaborated with stakeholders, scrum master, and cross-functional teams</li>
+        <li>Defined Android application and infrastructure architecture[cite: 2]</li>
+        <li>Led the Android team across multiple projects[cite: 2]</li>
+        <li>Reviewed code and guided the team in resolving complex development challenges[cite: 2]</li>
+        <li>Managed team and time; collaborated with stakeholders, scrum master, and cross-functional teams[cite: 2]</li>
       </ul>
     </article>
 
     <article class="job">
       <header>
-        <h3>Senior Software Engineer (Android) <span class="org">· Hire Programmers</span></h3>
-        <span class="meta">01/2022 – 06/2022 | Remote (USA)</span>
+        <h3>Sr. Software Engineer (Android) <span class="org">· Hire Programmers</span></h3>
+        <span class="meta">01/2022 – 06/2022 | Remote (USA)</span>[cite: 2]
       </header>
       <ul>
-        <li>Developed Android apps across various client projects, working with marketing, executives, UI designers, and other developers</li>
-        <li>Integrated applications with Android APIs and third-party APIs</li>
-        <li>Designed database structures that integrate with Android apps and web interfaces</li>
-        <li>Owned the full SDLC: analysis, development, testing, deployment, and enhancement</li>
-        <li>Tested apps and handled publishing after project completion</li>
+        <li>Developed Android apps across various client projects, working with marketing, executives, UI designers, and other developers[cite: 2]</li>
+        <li>Integrated applications with Android APIs and third-party APIs[cite: 2]</li>
+        <li>Designed database structures that integrate with Android apps and web interfaces[cite: 2, 3]</li>
+        <li>Owned the full SDLC: analysis, development, testing, deployment, and enhancement[cite: 3]</li>
+        <li>Tested apps and handled publishing after project completion[cite: 3]</li>
       </ul>
     </article>
 
     <article class="job">
       <header>
-        <h3>Software Engineer (Android) <span class="org">· TBL TechNerds</span></h3>
-        <span class="meta">09/2019 – 12/2021 | Remote (USA)</span>
+        <h3>Software Engineer (Android) <span class="org">· TBL Tech Nerds</span></h3>
+        <span class="meta">09/2019 – 12/2021 | Remote (USA)</span>[cite: 3]
       </header>
       <ul>
-        <li>Developed Android apps following mobile architecture best practices and SOLID principles</li>
-        <li>Reviewed code, managed repositories, and merged developer contributions</li>
-        <li>Designed responsive mobile UI; planned work and analyzed requirements</li>
-        <li>Named <strong>Best Employee of the Year (2021)</strong></li>
+        <li>Developed Android apps following mobile architecture best practices and SOLID principles[cite: 3]</li>
+        <li>Reviewed code, managed repositories, and merged developer contributions[cite: 3]</li>
+        <li>Designed responsive mobile UI; planned work and analyzed requirements[cite: 3]</li>
+        <li>Recognition: Awarded as <strong>Best Employee of the Year (2021)</strong>[cite: 3]</li>
       </ul>
     </article>
 
     <article class="job">
       <header>
         <h3>Associate Software Engineer (Android) <span class="org">· Remotearth Solutions</span></h3>
-        <span class="meta">01/2019 – 05/2019 | Remote (Bangladesh)</span>
+        <span class="meta">01/2019 – 05/2019 | Remote (Bangladesh)</span>[cite: 3]
       </header>
       <ul>
-        <li>Designed and developed native Android applications</li>
-        <li>Mentored interns and juniors to improve code quality</li>
-        <li>Contributed to new features of production apps; handled Google Play Console and deployment</li>
+        <li>Designed and developed native Android applications[cite: 3]</li>
+        <li>Mentored interns and juniors to improve code quality[cite: 3]</li>
+        <li>Contributed to new features of production apps; handled Google Play Console and deployment[cite: 4]</li>
       </ul>
     </article>
 
     <article class="job">
       <header>
         <h3>Lead Android Application Developer <span class="org">· Silicon Institute of Technology</span></h3>
-        <span class="meta">12/2018 – 02/2019 | Cox's Bazar, Bangladesh</span>
+        <span class="meta">12/2018 – 02/2019 | Cox's Bazar, Bangladesh</span>[cite: 4]
       </header>
       <ul>
-        <li>Led the mobile software department: project management, milestones, and planning</li>
-        <li>Planned database architecture, managed development infrastructure, reviewed code, and handled deployments</li>
-        <li>Ran Scrum ceremonies and daily standups</li>
+        <li>Led the mobile software department: project management, milestones, and planning[cite: 4]</li>
+        <li>Planned database architecture, managed development infrastructure, reviewed code, and handled deployments[cite: 4]</li>
+        <li>Ran Scrum ceremonies and daily standups[cite: 4]</li>
       </ul>
     </article>
   </section>
@@ -496,31 +500,30 @@ li { margin-bottom: 6px; }
   <!-- SKILLS SECTION -->
   <section id="skills">
     <h2 class="section-title">Skills &amp; Technologies</h2>
-    <!-- EDIT HERE: Skills Matrix -->
     <div class="skills-grid">
       <div class="skill-card">
-        <dt>Languages</dt>
-        <dd>Dart, Kotlin, Java, PHP, Python</dd>
+        <dt>Mobile Development</dt>
+        <dd>Android (Kotlin, Java), Jetpack Compose, Kotlin Multiplatform, Flutter (Android &amp; iOS), Dart[cite: 4]</dd>
       </div>
       <div class="skill-card">
-        <dt>Mobile &amp; Cross-Platform</dt>
-        <dd>Flutter (Riverpod, Bloc, Provider), Native Android (Jetpack Compose, Kotlin Multiplatform)</dd>
+        <dt>Architecture &amp; Patterns</dt>
+        <dd>MVVM, MVI, MVP, VIPER, Clean Architecture, Feature-First Modular, Repository Pattern, SOLID[cite: 4]</dd>
       </div>
       <div class="skill-card">
-        <dt>Architecture</dt>
-        <dd>Clean Architecture, MVVM, MVI, Repository Pattern, SOLID, Coroutines, Flow</dd>
+        <dt>State &amp; Async</dt>
+        <dd>Coroutines, StateFlow, LiveData, Flow, RxJava, Paging 3, Bloc, Cubit, Riverpod, Provider[cite: 4]</dd>
       </div>
       <div class="skill-card">
         <dt>Dependency Injection</dt>
-        <dd>Hilt, Dagger 2, GetIt, Injectable</dd>
+        <dd>Hilt, Dagger 2, Koin, GetIt, Injectable[cite: 4]</dd>
       </div>
       <div class="skill-card">
-        <dt>Backend &amp; Cloud</dt>
-        <dd>REST APIs, Firebase (Firestore, Cloud Messaging, Auth), Back4app</dd>
+        <dt>Cloud Databases &amp; Storage</dt>
+        <dd>Firebase Firestore, Realtime Database, Back4app, Supabase, Room, Drift, Hive, Isar[cite: 4]</dd>
       </div>
       <div class="skill-card">
-        <dt>Hardware &amp; IoT</dt>
-        <dd>Bluetooth Low Energy (BLE), USB/Serial, NFC, MQTT, Platform Channels</dd>
+        <dt>Device Comm &amp; IoT</dt>
+        <dd>Bluetooth Low Energy (BLE), NFC, USB/Serial, Arduino, ESP32, MQTT, Platform Channels[cite: 4]</dd>
       </div>
     </div>
   </section>
@@ -528,97 +531,88 @@ li { margin-bottom: 6px; }
   <!-- PROJECTS SECTION -->
   <section id="projects">
     <h2 class="section-title">Featured Projects</h2>
-    <!-- EDIT HERE: All 11 Projects -->
     <ul class="projects">
       <li>
         <div>
           <strong>ePass &amp; Donations</strong>
-          <span>US-based 4 Apps in 1 - Effortless Ticketing &amp; Donation Management solution for events and sponsorships.</span>
+          <span>Instantly create your own ticketing and donations account system developed for Global Dynamic Solutions LLC.</span>[cite: 4]
         </div>
         <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">US Client</span></div>
       </li>
       <li>
         <div>
-          <strong>Beach Eatz</strong>
-          <span>US-based online food delivery mobile application platform.</span>
-        </div>
-        <div class="tags"><span class="tag">Android</span><span class="tag">REST API</span><span class="tag">E-Commerce</span></div>
-      </li>
-      <li>
-        <div>
-          <strong>RackinUP</strong>
-          <span>Charleston US-based construction management mobile application with geofence auto-pause logic.</span>
-        </div>
-        <div class="tags"><span class="tag">Flutter</span><span class="tag">Geofencing</span><span class="tag">Maps</span></div>
-      </li>
-      <li>
-        <div>
           <strong>Seabee</strong>
-          <span>Construction engineering manual app for the United States Navy.</span>
+          <span>Companion to Seabee Online, the official magazine of the U.S. Navy Seabees.</span>[cite: 4]
         </div>
         <div class="tags"><span class="tag">Android</span><span class="tag">Offline First</span><span class="tag">US Navy</span></div>
       </li>
       <li>
         <div>
-          <strong>USACE</strong>
-          <span>Construction engineering manual app for the United States Army Corps of Engineers.</span>
+          <strong>USACE - U.S. Army Corps of Engineers</strong>
+          <span>EM 385-1-1 Safety and Occupational Health (SOH) Requirements developed for TBL Tech Nerds LLC.</span>[cite: 4]
         </div>
         <div class="tags"><span class="tag">Android</span><span class="tag">Offline First</span><span class="tag">US Army</span></div>
       </li>
       <li>
         <div>
-          <strong>Nexgen</strong>
-          <span>US-based film festival and awards mobile application platform.</span>
-        </div>
-        <div class="tags"><span class="tag">Mobile</span><span class="tag">Media</span><span class="tag">Events</span></div>
-      </li>
-      <li>
-        <div>
-          <strong>Martin School Travel</strong>
-          <span>US-based tour and travel guide agency application.</span>
-        </div>
-        <div class="tags"><span class="tag">Android</span><span class="tag">Travel</span><span class="tag">Guide</span></div>
-      </li>
-      <li>
-        <div>
           <strong>Patient Access 365</strong>
-          <span>US-based doctor appointment scheduling and healthcare consultation app.</span>
+          <span>USA-based Doctor Appointment &amp; Consultant App developed for Rehabneeds, LLC.</span>[cite: 4]
         </div>
         <div class="tags"><span class="tag">Android</span><span class="tag">Healthcare</span><span class="tag">Booking</span></div>
       </li>
       <li>
         <div>
           <strong>Expense Tracker</strong>
-          <span>Product of Remotearth Solutions for mobile expense tracking and storage management.</span>
+          <span>A simple, intuitive personal money management application designed for Remotearth Solutions.</span>[cite: 4]
         </div>
         <div class="tags"><span class="tag">Android</span><span class="tag">SQLite</span><span class="tag">Utility</span></div>
       </li>
       <li>
         <div>
-          <strong>CBN</strong>
-          <span>Official application of Cox's Bazar's first online news portal with live remote JSON configurations.</span>
+          <strong>Beach Eatz</strong>
+          <span>USA-based Online Food Delivery Mobile App - Cape May, New Jersey.</span>[cite: 4]
         </div>
-        <div class="tags"><span class="tag">Android</span><span class="tag">Kotlin</span><span class="tag">News</span></div>
+        <div class="tags"><span class="tag">Android</span><span class="tag">REST API</span><span class="tag">E-Commerce</span></div>
       </li>
       <li>
         <div>
-          <strong>Mahe Ramadan</strong>
-          <span>Islamic mobile application providing prayer times, calendars, and Ramadan guides.</span>
+          <strong>Martin School Travel</strong>
+          <span>USA-based Tour &amp; Travel Guide Agencies Mobile app for School Children in Lexington, KY.</span>[cite: 4]
         </div>
-        <div class="tags"><span class="tag">Android</span><span class="tag">Utility</span><span class="tag">Lifestyle</span></div>
+        <div class="tags"><span class="tag">Android</span><span class="tag">Travel</span><span class="tag">Guide</span></div>
+      </li>
+      <li>
+        <div>
+          <strong>Nexgen</strong>
+          <span>Mobile app for a US film festival awards event developed for TBL Tech Nerds LLC.</span>[cite: 4]
+        </div>
+        <div class="tags"><span class="tag">Mobile</span><span class="tag">Media</span><span class="tag">Events</span></div>
+      </li>
+      <li>
+        <div>
+          <strong>Hello AC Land</strong>
+          <span>Government mobile application providing digital land-related services across Bangladesh (nominated by ICT Division).</span>[cite: 4]
+        </div>
+        <div class="tags"><span class="tag">Android</span><span class="tag">Govt</span><span class="tag">Digital Services</span></div>
+      </li>
+      <li>
+        <div>
+          <strong>CBN</strong>
+          <span>Official App of First Cox's Bazar Online News Portal Cox's Bazar News [dot] com.</span>[cite: 4]
+        </div>
+        <div class="tags"><span class="tag">Android</span><span class="tag">Kotlin</span><span class="tag">News</span></div>
       </li>
     </ul>
   </section>
 
-  <!-- AWARDS SECTION -->
+  <!-- CERTIFICATES & AWARDS SECTION -->
   <section id="awards">
-    <h2 class="section-title">Awards &amp; Activities</h2>
-    <!-- EDIT HERE: Awards and Leadership -->
+    <h2 class="section-title">Certificates &amp; Awards</h2>
     <ul>
-      <li><strong>Best Employee of the Year</strong> — TBL TechNerds (12/2021)</li>
-      <li><strong>President</strong> — CBIU Engineers Club</li>
-      <li><strong>Competitive Programming</strong> — ACM ICPC Contestant &amp; Student Programming Mentor</li>
-      <li><strong>Hackathons &amp; Events</strong> — Participant in NASA Space Apps Challenge, Digital Innovation Fair, and Google Developer Conferences</li>
+      <li><strong>Best Employee of the Year (2021)</strong> — TBL Tech Nerds[cite: 3]</li>
+      <li><strong>Udemy Certificate (01/2024)</strong> — A Complete Guide to the Flutter SDK &amp; Flutter Framework for building native iOS and Android apps[cite: 4]</li>
+      <li><strong>President</strong> — CBIU Engineers Club[cite: 3]</li>
+      <li><strong>Competitive Programming</strong> — ACM ICPC Contestant (2016) &amp; Student Programming Mentor (2018)[cite: 3]</li>
     </ul>
   </section>
 </main>
