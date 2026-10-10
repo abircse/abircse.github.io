@@ -215,6 +215,7 @@ aside {
   justify-content: center;
   transition: all 0.2s;
   text-align: center;
+  white-space: nowrap;
 }
 
 .btn:hover { background: var(--panel-hover); border-color: var(--muted); }
@@ -502,7 +503,7 @@ aside {
 
       <div class="action-btns">
         <a class="btn primary" href="mailto:abircoxsbazar@gmail.com">Let's Connect</a>
-        <button class="btn" id="theme-toggle" aria-label="Toggle Theme">Mode</button>
+        <button class="btn" id="theme-toggle" aria-label="Toggle Theme">🌙 Dark Mode</button>
       </div>
 
       <div class="sidebar-section">
@@ -513,7 +514,7 @@ aside {
       <div class="sidebar-section">
         <h3>Education</h3>
         <p style="margin:0 0 10px; color: var(--muted);"><strong>M.Sc. in CSE</strong><br>East Delta University (2025–Present)<br><span style="font-size:0.8rem; color:var(--accent);">Focus: Artificial Intelligence &amp; ML</span></p>
-        <p style="margin:0; color: var(--muted);"><strong>B.Sc. in CSE</strong><br>Cox's Bazar International Univ (2014–2018)</p>
+        <p style="margin:0; color: var(--muted);"><strong>B.Sc. in CSE</strong><br>Cox's Bazar International Univ (2014–2018)<br><span style="font-size:0.8rem; color:var(--accent);">Focus: Software Engineering</span></p>
       </div>
     </div>
   </aside>
@@ -809,7 +810,7 @@ aside {
 
 <script>
 /* ==========================================================================
-   INTERACTIVE TABS & THEME SWITCHING
+   INTERACTIVE TABS & DYNAMIC THEME TOGGLE
    ========================================================================== */
 function switchTab(tabId) {
   document.querySelectorAll('.section-panel').forEach(panel => {
@@ -826,11 +827,21 @@ function switchTab(tabId) {
   const root = document.documentElement;
   const btn = document.getElementById('theme-toggle');
   
+  // Set initial button label based on current theme
+  function updateButtonLabel() {
+    const isLight = root.getAttribute('data-theme') === 'light';
+    btn.innerHTML = isLight ? '☀️ Light Mode' : '🌙 Dark Mode';
+  }
+
   try {
     const saved = localStorage.getItem('theme');
-    if (saved) root.setAttribute('data-theme', saved);
+    if (saved) {
+      root.setAttribute('data-theme', saved);
+    }
   } catch(e) {}
   
+  updateButtonLabel();
+
   btn.addEventListener('click', function(){
     const current = root.getAttribute('data-theme');
     const next = current === 'light' ? '' : 'light';
@@ -841,6 +852,7 @@ function switchTab(tabId) {
       root.removeAttribute('data-theme');
       localStorage.removeItem('theme');
     }
+    updateButtonLabel();
   });
 })();
 </script>
